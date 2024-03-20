@@ -1,17 +1,20 @@
-import Link from "next/link";
-import React from "react";
+import Link from 'next/link';
+import React from 'react';
 
 const WhyChooseUsTwoItem = (props) => {
   return (
-    <div className="choose-item-two wow fadeInUp" data-wow-delay=".2s">
-      <div className="choose-icon-two">
+    <div
+      className='choose-item-two wow fadeInUp align-items-center justify-content-center d-flex flex-column'
+      data-wow-delay='.2s'
+    >
+      <div className='choose-icon-two'>
         <img src={props.item.src} alt={props.item.title} />
       </div>
-      <div className="choose-content">
-        <h2 className="title">
+      <div className='choose-content align-items-center justify-content-center d-flex flex-column'>
+        <h2 className='title'>
           <Link href={props.item.url}>{props.item.title}</Link>
         </h2>
-        <p>{props.item.desc}</p>
+        <p className='text-center '>{props.item.desc}</p>
       </div>
     </div>
   );

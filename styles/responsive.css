@@ -227,7 +227,7 @@
   .chart-wrap {
     padding: 60px 30px 60px;
   }
-  .footer-top .row [class*="col-"]:nth-child(4) .footer-widget {
+  .footer-top .row [class*='col-']:nth-child(4) .footer-widget {
     margin-left: 0;
   }
   .footer-menu ul li {
@@ -418,7 +418,7 @@
   }
   .menu-area .mobile-nav-toggler {
     color: #fff;
-    margin-top: 17px;
+    margin-top: 10px;
   }
   .banner-content .title {
     font-size: 44px;
@@ -773,7 +773,7 @@
   .contact-form-wrap {
     padding: 35px 20px;
   }
-  .footer-top .row [class*="col-"]:nth-child(2) .footer-widget {
+  .footer-top .row [class*='col-']:nth-child(2) .footer-widget {
     margin-left: 0;
   }
   .footer-menu ul li {

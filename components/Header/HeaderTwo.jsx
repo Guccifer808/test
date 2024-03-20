@@ -3,6 +3,7 @@ import cn from 'classnames';
 import $ from 'jquery';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
 
 let flag = true;
 
@@ -107,7 +108,12 @@ const HeaderTwo = () => {
                 <nav className='menu-nav'>
                   <div className='logo'>
                     <Link href='/'>
-                      <img src={'/img/logo/logo.png'} alt='' />
+                      <Image
+                        src={'/img/logo/fm_logo.svg'}
+                        alt='FastMoney'
+                        width={120}
+                        height={50}
+                      />
                     </Link>
                   </div>
                   <div className='navbar-wrap main-menu d-none d-lg-flex'>
@@ -191,7 +197,7 @@ const HeaderTwo = () => {
                   </div>
                   <div className='header-action d-none d-md-block'>
                     <ul>
-                      <li className='header-lang'>
+                      {/* <li className='header-lang'>
                         <span className='selected-lang'>ENG</span>
                         <ul className='lang-list'>
                           <li>
@@ -207,10 +213,14 @@ const HeaderTwo = () => {
                             <Link href='#'>CIN</Link>
                           </li>
                         </ul>
-                      </li>
+                      </li> */}
                       <li className='header-btn'>
-                        <Link href='#' className='btn'>
-                          Buy Now
+                        <Link
+                          href='https://t.me/fastmoneyphuket'
+                          className='btn'
+                          target='_blank'
+                        >
+                          Telegram
                         </Link>
                       </li>
                     </ul>
@@ -226,7 +236,13 @@ const HeaderTwo = () => {
                   </div>
                   <div className='nav-logo'>
                     <Link href='/'>
-                      <img src={'/img/logo/logo.png'} alt='' title='' />
+                      <Image
+                        src={'/img/logo/fm_logo.svg'}
+                        alt='FastMoney'
+                        title=''
+                        width={120}
+                        height={50}
+                      />
                     </Link>
                   </div>
                   <div className='menu-outer'>
@@ -235,28 +251,18 @@ const HeaderTwo = () => {
                   <div className='social-links'>
                     <ul className='clearfix'>
                       <li>
-                        <Link href='#'>
-                          <i className='fab fa-facebook-f'></i>
+                        <Link href='https://t.me/fm_advisor'>
+                          <i className='fab fa-telegram'></i>
                         </Link>
                       </li>
                       <li>
-                        <Link href='#'>
-                          <i className='fab fa-twitter'></i>
+                        <Link href='https://wa.me/79520042864'>
+                          <i className='fab fa-whatsapp'></i>
                         </Link>
                       </li>
                       <li>
-                        <Link href='#'>
+                        <Link href='https://instagram.com/1mfast'>
                           <i className='fab fa-instagram'></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href='#'>
-                          <i className='fab fa-linkedin-in'></i>
-                        </Link>
-                      </li>
-                      <li>
-                        <Link href='#'>
-                          <i className='fab fa-youtube'></i>
                         </Link>
                       </li>
                     </ul>

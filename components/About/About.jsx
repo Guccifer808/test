@@ -1,70 +1,67 @@
-import React from "react";
+import React from 'react';
 
 const About = () => {
   return (
-    <section id="about" className="about-area-two">
-      <div className="container custom-container-four">
-        <div className="row align-items-center">
-          <div className="col-lg-6">
+    <section id='about' className='about-area-two'>
+      <div className='container custom-container-four'>
+        <div className='row align-items-center'>
+          <div className='col-lg-6'>
             <div
-              className="about-img-two text-center wow fadeInLeft"
-              data-wow-delay=".2s"
+              className='about-img-two text-center wow fadeInLeft'
+              data-wow-delay='.2s'
             >
-              <img src={"/img/images/h2_about_img.png"} alt="" />
+              <img src={'/img/images/h2_about_img_3.png'} alt='' />
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className='col-lg-6'>
             <div
-              className="about-content-two wow fadeInRight"
-              data-wow-delay=".2s"
+              className='about-content-two wow fadeInRight'
+              data-wow-delay='.2s'
             >
-              <div className="section-title section-title-two mb-15">
-                <span className="sub-title">ABOUT Crypto ICO</span>
-                <h2 className="title">
-                  Bigtech Theme is the best for your ICO
-                </h2>
+              <div className='section-title section-title-two mb-15'>
+                <span className='sub-title'>Telegram-канал</span>
+                <h2 className='title'>Репутация - то, чем мы дорожим</h2>
               </div>
               <p>
-                The World’s 1st ICO Platform That Offers Rewards and The
-                platform helps investors to make easy
+                Нас рекомендуют друзьям и знакомым, а также оставляют реальные
+                отзывы в телеграм-канале сервиса
               </p>
-              <div className="about-list">
+              <div className='about-list'>
                 <ul>
                   <li>
-                    <i className="fas fa-check"></i>Mouthwatering leading how
-                    real formula also
+                    <i className='fas fa-check'></i>Единственный
+                    верифицированный канал
                   </li>
                   <li>
-                    <i className="fas fa-check"></i>Locked-in have can mountain
-                    thought
+                    <i className='fas fa-check'></i>Тысячи позитивных отзывов
                   </li>
                 </ul>
               </div>
 
               <a
-                href={"/img/images/h2_about_img.png"}
+                href={'https://t.me/+E8eKDKmN0U5lOTYy'}
                 download
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-two"
+                target='_blank'
+                rel='noopener noreferrer'
+                className='btn btn-two'
               >
-                Download Document
+                Telegram-канал Fast Money
               </a>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="about-shape-wrap">
+      <div className='about-shape-wrap'>
         <img
-          src={"/img/images/about_shape01.png"}
-          alt=""
-          className="shape-one"
+          src={'/img/images/about_shape01.png'}
+          alt=''
+          className='shape-one'
         />
         <img
-          src={"/img/images/about_shape02.png"}
-          alt=""
-          className="shape-two rotateme"
+          src={'/img/images/about_shape02.png'}
+          alt=''
+          className='shape-two rotateme'
         />
       </div>
     </section>

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import SlickSlider from "../SlickSlider/SlickSlider";
-import WhyChooseUsItem from "./WhyChooseUsItem";
+import React, { useEffect, useState } from 'react';
+import SlickSlider from '../SlickSlider/SlickSlider';
+import WhyChooseUsItem from './WhyChooseUsItem';
 
 const WhyChooseUs = () => {
   const slickSettings = {
@@ -48,102 +48,128 @@ const WhyChooseUs = () => {
 
   const slider_items = [
     {
-      src: "/img/icon/choose_icon01.svg",
-      alt: "",
-      link: "/",
-      title: "Mobile payment make easy",
-      description: "Add new, trending and rare artwork to your collection.",
+      // src: '/img/icon/choose_icon01.svg',
+      src: '/img/payments/sber.png',
+      alt: '',
+      link: '/',
+      title: 'Mobile payment make easy',
+      description: '',
     },
     {
-      src: "/img/icon/choose_icon02.svg",
-      alt: "",
-      link: "/",
-      title: "Lifetime free transaction",
-      description: "Add new, trending and rare artwork to your collection.",
+      // src: '/img/icon/choose_icon02.svg',
+      src: '/img/payments/tinkoff.png',
+      alt: '',
+      link: '/',
+      title: 'Lifetime free transaction',
+      description: '',
     },
     {
-      src: "/img/icon/choose_icon03.svg",
-      alt: "",
-      link: "/",
+      // src: '/img/icon/choose_icon03.svg',
+      src: '/img/payments/alfa.png',
+      alt: '',
+      link: '/',
       title: <>Protect the identity</>,
-      description: "Add new, trending and rare artwork to your collection.",
+      description: '',
     },
     {
-      src: "/img/icon/choose_icon04.svg",
-      alt: "",
-      link: "/",
-      title: "Sercurity & control over money",
-      description: "Add new, trending and rare artwork to your collection.",
+      // src: '/img/icon/choose_icon04.svg',
+      src: '/img/payments/raiffeisen.svg',
+      alt: '',
+      link: '/',
+      title: '',
+      description: '',
     },
     {
-      src: "/img/icon/choose_icon01.svg",
-      alt: "",
-      link: "/",
-      title: "Lifetime free transaction",
-      description: "Add new, trending and rare artwork to your collection.",
+      // src: '/img/icon/choose_icon01.svg',
+      src: '/img/payments/vtb.png',
+      alt: '',
+      link: '/',
+      title: 'Lifetime free transaction',
+      description: '',
     },
     {
-      src: "/img/icon/choose_icon03.svg",
-      alt: "",
-      link: "/",
+      src: '/img/payments/sbp.png',
+      alt: '',
+      link: '/',
       title: <>Protect the identity</>,
-      description: "Add new, trending and rare artwork to your collection.",
+      description: '',
     },
     {
-      src: "/img/icon/choose_icon04.svg",
-      alt: "",
-      link: "/",
-      title: "Sercurity & control over money",
-      description: "Add new, trending and rare artwork to your collection.",
+      src: '/img/payments/mir.png',
+      alt: '',
+      link: '/',
+      title: '',
+      description: '',
+    },
+    {
+      src: '/img/payments/visa.png',
+      alt: '',
+      link: '/',
+      title: '',
+      description: '',
+    },
+    {
+      src: '/img/payments/mastercard.png',
+      alt: '',
+      link: '/',
+      title: '',
+      description: '',
+    },
+    {
+      src: '/img/payments/tether.png',
+      alt: '',
+      link: '/',
+      title: '',
+      description: '',
     },
   ];
 
-  const initalState = 0;
-  const [count, setCount] = useState(initalState);
+  // const initalState = 0;
+  // const [count, setCount] = useState(initalState);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCount((old) => (old == 6 ? 0 : old + 1));
-    }, 3000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCount((old) => (old == 9 ? 0 : old + 1));
+  //   }, 3000);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
-  const toMultiply = 100 / slider_items.length;
+  // const toMultiply = 100 / slider_items.length;
 
   return (
-    <section className="choose-area pb-130">
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-xl-6">
-            <div className="section-title text-center mb-50">
-              <span className="sub-title">why Choose us </span>
-              <h2 className="title">
-                Why choose our bigtech <span>Token</span>
+    <section className='choose-area pb-50 pt-100'>
+      <div className='container'>
+        <div className='row justify-content-center'>
+          <div className='col-xl-6'>
+            <div className='section-title text-center mb-50'>
+              <span className='sub-title'>Платёжные методы</span>
+              <h2 className='title'>
+                Удобные и <span>Безопасные</span> Опции Оплаты
               </h2>
             </div>
           </div>
         </div>
 
-        <div className="row choose-active">
+        <div className='row choose-active'>
           <SlickSlider settings={slickSettings}>
             {slider_items.map((item, index) => (
-              <div key={index} className="col-lg-3">
+              <div key={index} className='col-lg-3'>
                 <WhyChooseUsItem item={item} />
               </div>
             ))}
           </SlickSlider>
         </div>
 
-        <div className="slide-progressbar">
+        {/* <div className='slide-progressbar'>
           <div
             style={{
               // width: `${count * toMultiply}%`,
               backgroundSize: `${count * toMultiply}% 100%`,
             }}
-            className="slide-filler"
+            className='slide-filler'
           />
-        </div>
+        </div> */}
 
         {/* <div
           className="slide-progress"
