@@ -1,18 +1,16 @@
 import Head from 'next/head';
 import LayoutTwo from '@/layouts/LayoutTwo';
 import BannerTwo from '@/components/Banner/BannerTwo';
-// import CountDownTwo from '@/components/CountDown/CountDownTwo';
 import About from '@/components/About/About';
 import WhyChooseUs from '@/components/WhyChooseUs/WhyChooseUs';
 import CounterArea from '@/components/CounterArea/CounterArea';
-import RoadmapTwo from '@/components/Roadmap/RoadmapTwo';
-import TeamTwo from '@/components/Team/TeamTwo';
 import DownloadArea from '@/components/DownloadArea/DownloadArea';
 import Faq from '@/components/Faq/Faq';
 import ContactTwo from '@/components/Contact/ContactTwo';
-// import Newsletter from '@/components/Newsletter/Newsletter';
 import WhyChooseUsTwo from '@/components/WhyChooseUs/WhyChooseUsTwo';
-// import LogoSlider from '@/components/LogoSlider/LogoSlider';
+import WhitePaper from '@/components/WhitePaper/WhitePaper';
+import Roadmap from '@/components/Roadmap/Roadmap';
+import cn from 'classnames';
 
 export default function HomeTwo() {
   return (
@@ -24,19 +22,23 @@ export default function HomeTwo() {
 
       <LayoutTwo>
         <main>
-          <BannerTwo />
-          {/* <CountDownTwo /> */}
-          {/* <LogoSlider /> */}
-          <About />
-          <WhyChooseUsTwo />
-          <CounterArea />
-          <WhyChooseUs />
-          <RoadmapTwo />
-          <TeamTwo />
-          <DownloadArea />
-          <Faq />
-          <ContactTwo />
-          {/* <Newsletter /> */}
+          <div className={cn('white-background')}>
+            <BannerTwo />
+
+            <About />
+            <WhyChooseUsTwo />
+            <CounterArea />
+            <WhyChooseUs />
+          </div>
+          <div className='area-bg'>
+            <Roadmap />
+            <WhitePaper />
+          </div>
+          <div className={cn('white-background')}>
+            <DownloadArea />
+            <Faq />
+            <ContactTwo />
+          </div>
         </main>
       </LayoutTwo>
     </>

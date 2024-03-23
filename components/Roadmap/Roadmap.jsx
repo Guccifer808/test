@@ -1,101 +1,71 @@
-import { useHorizontalScroll } from "@/lib/hooks/useHorizontalScroll";
-import React from "react";
-import RoadmapItem from "./RoadmapItem";
+import React from 'react';
+import RoadmapItem from './RoadmapItem';
 
 const Roadmap = () => {
   const roadmap_items = [
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Concept",
-      info: [
-        "EVM support for parthians",
-        "SubQuery Academy",
-        "Proof of indexing",
-      ],
+      roadmapTitle: 'Сентябрь 2022',
+      title: 'Пхукет',
+      info: 'Вышли на рынок Таиланда и начали предоставлять услуги по обмену на Пхукете',
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Research",
-      info: [
-        "SubQuery Builders/Grants Program",
-        "SQT Network contract internal MVP",
-        "Coordinator and client SDK",
-      ],
+      roadmapTitle: 'Декабрь 2022',
+      title: 'От Пхукета до Пхангана',
+      info: 'Расширили географию по всему Таиланду: Пхукет, Бангкок, Паттайя, Краби, Пханган',
     },
 
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "App beta test",
-      info: [
-        "Public testnet launch",
-        "SubQuery Network Explorer and dApp",
-        "Point-in-time indexing",
-      ],
+      roadmapTitle: 'Март 2023',
+      title: 'Глобальное развитие',
+      info: 'Начали предоставлять услуги по обмену в Турции, ОАЭ, Индонезии',
     },
 
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Token Test",
-      info: [
-        "SQT token generation event",
-        "Public incentivize testnet launch",
-        "Data traffic insights and reporting",
-      ],
+      roadmapTitle: 'Июнь 2023',
+      title: 'Мировая сеть партнёров',
+      info: 'Увеличили сеть партнёрских офисов в 30+ странах мира',
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Alpha Test",
-      info: [
-        "Launch of the SubQuery Foundation",
-        "Finalise research for other Layer-1 chains",
-        "Liquidity mining program",
-      ],
+      roadmapTitle: 'Август 2023',
+      title: 'Telegram Верификация',
+      info: 'Получили синюю галочку от Telegram и стали единственным верифицированным сервисом обмена в телеграм',
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Benefits",
-      info: [
-        "Mainnet launch",
-        "Centralized exchange launch",
-        "Public incentivize testnet",
-      ],
+      roadmapTitle: 'Сентябрь 2023',
+      title: 'Расширение услуг для бизнеса',
+      info: 'Начали работу с юр лицами. Открыли возможность оплаты инвойсов для клиентов. А также стали работать с Китаем, проводить отправки и прием на Alipay, WeChat',
     },
     {
-      roadmapTitle: "Mid of Q4 2021",
-      title: "Operational",
-      info: [
-        <>
-          SubQuery launches its <br /> own parthian
-        </>,
-        "SubQuery Foundation",
-      ],
+      roadmapTitle: 'Март 2024',
+      title: 'Offline пункт обмена',
+      info: 'Запустили свой первый offline пункт обмена на Пхукете',
     },
   ];
 
-  const scrollRef = useHorizontalScroll();
+  // const scrollRef = useHorizontalScroll();
 
   return (
-    <section id="roadmap" className="roadmap-area pt-130 pb-130">
-      <div className="container custom-container-two">
-        <div className="row justify-content-center">
-          <div className="col-xl-5 col-lg-8">
-            <div className="section-title text-center mb-60">
-              <span className="sub-title">OUr Roadmap</span>
-              <h2 className="title">
-                Bigtech Strategy and <br /> Project <span>Plan</span>
+    <section id='roadmap' className='roadmap-area pt-130 pb-130 area-bg-top'>
+      <div className='container custom-container-two'>
+        <div className='row justify-content-center'>
+          <div className='col-xl-5 col-lg-8'>
+            <div className='section-title text-center mb-60'>
+              <span className='sub-title text-white'>FastMoney's Roadmap</span>
+              <h2 className='title text-white'>
+                Наш Путь <span>Развития</span>
               </h2>
             </div>
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-lg-12">
+        <div className='row'>
+          <div className='col-lg-12'>
             <div
-              className="bt-roadmap_x bt-roadmap-scrollbar"
-              ref={scrollRef}
-              style={{ overflow: "auto" }}
+              className='bt-roadmap_x bt-roadmap-scrollbar'
+              // ref={scrollRef}
+              style={{ overflow: 'auto' }}
             >
-              <div className="bt-roadmap-wrap">
+              <div className='bt-roadmap-wrap '>
                 {roadmap_items.map((x, index) => (
                   <RoadmapItem key={index} item={x} />
                 ))}

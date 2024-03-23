@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const WhyChooseUsItem = (props) => {
   return (
-    <div className='choose-item'>
-      <div className='choose-icon'>
+    <div className='choose-item mt-2 mb-2'>
+      <div className='choose-icon  '>
         <img src={props.item.src} alt={props.item.alt} />
       </div>
       {/* <div className="choose-content">

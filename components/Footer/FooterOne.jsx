@@ -140,6 +140,15 @@ const FooterOne = () => {
                 <div className='copyright-text'>
                   <p>&copy; FastMoney </p>
                 </div>
+                <div className='footer-menu d-sm-none d-block'>
+                  <ul>
+                    <li>
+                      <Link href='/privacy-policy' target='_blank'>
+                        Политика конфиденциальности
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div className='col-lg-6 d-none d-sm-block'>
                 <div className='footer-menu'>
@@ -149,12 +158,6 @@ const FooterOne = () => {
                         Политика конфиденциальности
                       </Link>
                     </li>
-                    {/* <li>
-                      <Link href='#'>Privacy policy</Link>
-                    </li>
-                    <li>
-                      <Link href='#'>Login / Signup</Link>
-                    </li> */}
                   </ul>
                 </div>
               </div>

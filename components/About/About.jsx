@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const About = () => {
@@ -38,15 +39,13 @@ const About = () => {
                 </ul>
               </div>
 
-              <a
-                href={'https://t.me/+E8eKDKmN0U5lOTYy'}
-                download
+              <Link
+                href='https://t.me/fastmoneyphuket'
+                className='btn '
                 target='_blank'
-                rel='noopener noreferrer'
-                className='btn btn-two'
               >
-                Telegram-канал Fast Money
-              </a>
+                Telegram-канал
+              </Link>
             </div>
           </div>
         </div>

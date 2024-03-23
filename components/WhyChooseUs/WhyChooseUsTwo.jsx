@@ -6,7 +6,7 @@ const WhyChooseUsTwo = () => {
     {
       src: '/img/icon/atm.svg',
       title: 'Через банкомат',
-      desc: 'Для этого не нужно иметь карты тайского или РФ банков.',
+      desc: 'Для этого не нужно иметь карты тайского или РФ банков',
       url: '/',
     },
     {
@@ -18,7 +18,7 @@ const WhyChooseUsTwo = () => {
     {
       src: '/img/icon/transfer.svg',
       title: 'Перевод на счёт',
-      desc: 'Если у вас уже есть карта тайского банка или нужно произвести оплату за что-либо.',
+      desc: 'Если у вас уже есть карта тайского банка или нужно произвести оплату за что-либо',
       url: '/',
     },
   ];
@@ -29,13 +29,15 @@ const WhyChooseUsTwo = () => {
         <div className='row justify-content-center'>
           <div className='col-lg-6'>
             <div className='section-title text-center mb-70'>
-              <span className='sub-title'>why Choose us</span>
-              <h2 className='title'>Why you choose our bigtech Token</h2>
+              <span className='sub-title text-white'>Почему выбирают нас</span>
+              <h2 className='title text-white'>
+                Способы получения <span>бат</span>
+              </h2>
             </div>
           </div>
         </div>
 
-        <div className='row'>
+        <div className='row '>
           {items.map((x, index) => (
             <div key={index} className='col-lg-4 col-sm-6'>
               <WhyChooseUsTwoItem item={x} />

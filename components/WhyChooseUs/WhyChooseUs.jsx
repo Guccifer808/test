@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import SlickSlider from '../SlickSlider/SlickSlider';
 import WhyChooseUsItem from './WhyChooseUsItem';
 
@@ -48,31 +48,27 @@ const WhyChooseUs = () => {
 
   const slider_items = [
     {
-      // src: '/img/icon/choose_icon01.svg',
       src: '/img/payments/sber.png',
       alt: '',
       link: '/',
-      title: 'Mobile payment make easy',
+      title: '',
       description: '',
     },
     {
-      // src: '/img/icon/choose_icon02.svg',
       src: '/img/payments/tinkoff.png',
       alt: '',
       link: '/',
-      title: 'Lifetime free transaction',
+      title: '',
       description: '',
     },
     {
-      // src: '/img/icon/choose_icon03.svg',
       src: '/img/payments/alfa.png',
       alt: '',
       link: '/',
-      title: <>Protect the identity</>,
+      title: '',
       description: '',
     },
     {
-      // src: '/img/icon/choose_icon04.svg',
       src: '/img/payments/raiffeisen.svg',
       alt: '',
       link: '/',
@@ -80,18 +76,17 @@ const WhyChooseUs = () => {
       description: '',
     },
     {
-      // src: '/img/icon/choose_icon01.svg',
       src: '/img/payments/vtb.png',
       alt: '',
       link: '/',
-      title: 'Lifetime free transaction',
+      title: '',
       description: '',
     },
     {
       src: '/img/payments/sbp.png',
       alt: '',
       link: '/',
-      title: <>Protect the identity</>,
+      title: '',
       description: '',
     },
     {
@@ -124,19 +119,6 @@ const WhyChooseUs = () => {
     },
   ];
 
-  // const initalState = 0;
-  // const [count, setCount] = useState(initalState);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCount((old) => (old == 9 ? 0 : old + 1));
-  //   }, 3000);
-
-  //   return () => clearInterval(interval);
-  // }, []);
-
-  // const toMultiply = 100 / slider_items.length;
-
   return (
     <section className='choose-area pb-50 pt-100'>
       <div className='container'>
@@ -160,25 +142,6 @@ const WhyChooseUs = () => {
             ))}
           </SlickSlider>
         </div>
-
-        {/* <div className='slide-progressbar'>
-          <div
-            style={{
-              // width: `${count * toMultiply}%`,
-              backgroundSize: `${count * toMultiply}% 100%`,
-            }}
-            className='slide-filler'
-          />
-        </div> */}
-
-        {/* <div
-          className="slide-progress"
-          role="progressbar"
-          aria-valuemin="0"
-          aria-valuemax="100"
-        >
-          <span className="slider__label sr-only"></span>
-        </div> */}
       </div>
     </section>
   );
