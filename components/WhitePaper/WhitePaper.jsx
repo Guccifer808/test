@@ -4,7 +4,7 @@ import Link from 'next/link';
 const WhitePaper = () => {
   return (
     <section className='document-area pt-60'>
-      <div className='container'>
+      <div className='container '>
         <div className='row justify-content-center'>
           <div className='col-lg-7 order-2 order-lg-0'>
             <div
@@ -20,23 +20,30 @@ const WhitePaper = () => {
               className='document-content mt-50 wow fadeInRight'
               data-wow-delay='.2s'
             >
-              <div className='section-title mb-35'>
-                <span className='sub-title text-white'>Whitepaper</span>
-                <h2 className='title text-white'>
-                  FastMoney <span>Documents</span>
+              <div className='section-title mb-60 text-center'>
+                <span className='sub-title text-white'>Финансовые Решения</span>
+                <h2 className='title text-white '>
+                  C нами вы <span> сможете</span>
                 </h2>
               </div>
-
-              <ul className='document-list'>
-                <li>White Paper</li>
-                <li>Privaci & Policy</li>
-                <li>Terms Of Coin Sale</li>
-                <li>One Pager</li>
-              </ul>
-
+              <div className='row align-items-center justify-content-center d-flex flex-column'>
+                <ul className='document-list row'>
+                  <li>
+                    Поменять безналичные рубли или USDT на наличные/безналичные
+                    баты
+                  </li>
+                  <li>
+                    Оплатить инвойс, работаем с юр. лицами для оплаты товаров и
+                    услуг
+                  </li>
+                  <li>Оплатить недвижимость в Таиланде</li>
+                </ul>
+              </div>
+              {/* <div className='d-flex justify-content-center align-center '> */}
               <Link href='/' className='btn'>
-                Download Doc
+                Telegram-Канал
               </Link>
+              {/* </div> */}
             </div>
           </div>
         </div>

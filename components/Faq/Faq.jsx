@@ -84,13 +84,6 @@ const Faq = () => {
     <section id='faq' className='faq-area'>
       <div className='container custom-container-four'>
         <div className='faq-shape-wrap'>
-          <img src={'/img/images/faq_shape01.png'} alt='' className='img-one' />
-          <img
-            src={'/img/images/faq_shape_p.png'}
-            alt=''
-            className='img-two'
-            // className='img-two rotateme'
-          />
           <img
             src={'/img/images/faq_shape03.png'}
             alt=''

@@ -28,7 +28,9 @@
 21. Preloader
 
 */
-
+html {
+  scroll-behavior: smooth !important;
+}
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
@@ -1485,7 +1487,7 @@ label {
 }
 .about-content-two .about-list ul li {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   color: #030b15;
   margin-bottom: 10px;
 }
@@ -1495,6 +1497,9 @@ label {
 .about-content-two .about-list ul li i {
   color: #564dca;
   margin-right: 10px;
+}
+.about-content-two .about-list .about-list-badge {
+  margin-left: 3px;
 }
 .about-shape-wrap img {
   position: absolute;
@@ -1582,7 +1587,7 @@ label {
 }
 
 .choose-content .title {
-  font-size: 22px;
+  font-size: 24px;
   margin-bottom: 24px;
   font-weight: 500;
   text-transform: none;
@@ -1590,7 +1595,7 @@ label {
 }
 .choose-content p {
   margin-bottom: 0px;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 22px;
   color: #a4b4c3;
 }
@@ -2165,7 +2170,7 @@ label {
   margin-bottom: 40px;
 }
 .document-content .document-list li {
-  font-size: 18px;
+  font-size: 16px;
   color: #fff;
   position: relative;
   margin-bottom: 15px;
@@ -2180,10 +2185,29 @@ label {
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
-  background: #fff;
+  width: 7px;
+  height: 7px;
+  background: #564dca;
   border-radius: 50%;
+}
+.btn {
+  background: #564dca;
+  font-size: 14px;
+  padding: 15px 35px;
+}
+.document-content .btn:hover {
+  background: #fff;
+  border-color: #564dca;
+  color: #000;
+}
+
+.document-content .btn::after {
+  display: none;
+}
+.document-content .btn:hover {
+  background: #fff;
+  border-color: #564dca;
+  color: #000;
 }
 
 /* 13. Team */
@@ -2425,8 +2449,8 @@ label {
 .faq-shape-wrap img.img-two {
   right: 6%;
   top: 15%;
-  max-width: 15%;
-  max-height: 15%;
+  max-width: 12%;
+  max-height: 12%;
 }
 .faq-shape-wrap img.img-three {
   left: 50%;

@@ -129,9 +129,9 @@ const HeaderTwo = () => {
                           className='section-link'
                           onClick={() => handleClickScroll('header')}
                         >
-                          Home
+                          Калькулятор
                         </Link>
-                        <ul className={cn('sub-menu')}>
+                        {/* <ul className={cn('sub-menu')}>
                           <li className={cn(pathname == '/' && 'active')}>
                             <Link href='/'>Home One</Link>
                           </li>
@@ -140,7 +140,7 @@ const HeaderTwo = () => {
                           >
                             <Link href='/home-two'>Home Two</Link>
                           </li>
-                        </ul>
+                        </ul> */}
                       </li>
                       <li className={cn(hash == 'about' && 'active')}>
                         <Link
@@ -148,7 +148,7 @@ const HeaderTwo = () => {
                           className='section-link'
                           onClick={() => handleClickScroll('about')}
                         >
-                          About us
+                          О Нас
                         </Link>
                       </li>
                       <li className={isActiveLink('#roadmap')}>
@@ -169,7 +169,7 @@ const HeaderTwo = () => {
                           Faq
                         </Link>
                       </li>
-                      <li className={'menu-item-has-children'}>
+                      {/* <li className={'menu-item-has-children'}>
                         <Link href='/blog'>Blog</Link>
                         <ul className={cn('sub-menu')}>
                           <li className={cn(pathname == '/blog' && 'active')}>
@@ -183,37 +183,11 @@ const HeaderTwo = () => {
                             <Link href='/blog/blog-details'>Blog Details</Link>
                           </li>
                         </ul>
-                      </li>
-                      <li className={isActiveLink('#contact')}>
-                        <Link
-                          href='#contact'
-                          className='section-link'
-                          onClick={() => handleClickScroll('contact')}
-                        >
-                          Contact us
-                        </Link>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                   <div className='header-action d-none d-md-block'>
                     <ul>
-                      {/* <li className='header-lang'>
-                        <span className='selected-lang'>ENG</span>
-                        <ul className='lang-list'>
-                          <li>
-                            <Link href='#'>IND</Link>
-                          </li>
-                          <li>
-                            <Link href='#'>BNG</Link>
-                          </li>
-                          <li>
-                            <Link href='#'>TUR</Link>
-                          </li>
-                          <li>
-                            <Link href='#'>CIN</Link>
-                          </li>
-                        </ul>
-                      </li> */}
                       <li className='header-btn'>
                         <Link
                           href='https://t.me/fastmoneyphuket'

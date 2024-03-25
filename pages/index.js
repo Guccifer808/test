@@ -35,9 +35,9 @@ export default function HomeTwo() {
             <WhitePaper />
           </div>
           <div className={cn('white-background')}>
-            <DownloadArea />
+            {/* <DownloadArea /> */}
             <Faq />
-            <ContactTwo />
+            {/* <ContactTwo /> */}
           </div>
         </main>
       </LayoutTwo>

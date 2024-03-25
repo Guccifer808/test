@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import verified from '../../public/img/icon/verified_badge.svg';
+import Image from 'next/image';
 
 const About = () => {
   return (
@@ -19,8 +21,8 @@ const About = () => {
               className='about-content-two wow fadeInRight'
               data-wow-delay='.2s'
             >
-              <div className='section-title section-title-two mb-15'>
-                <span className='sub-title'>Telegram-канал</span>
+              <div className='section-title mb-30 '>
+                <span className='sub-title '>Telegram-канал</span>
                 <h2 className='title'>Репутация - то, чем мы дорожим</h2>
               </div>
               <p>
@@ -32,6 +34,13 @@ const About = () => {
                   <li>
                     <i className='fas fa-check'></i>Единственный
                     верифицированный канал
+                    <Image
+                      src={verified}
+                      alt='verified badge'
+                      width={20}
+                      heigh={20}
+                      className='about-list-badge'
+                    />
                   </li>
                   <li>
                     <i className='fas fa-check'></i>Тысячи позитивных отзывов
@@ -56,11 +65,6 @@ const About = () => {
           src={'/img/images/about_shape01.png'}
           alt=''
           className='shape-one'
-        />
-        <img
-          src={'/img/images/about_shape02.png'}
-          alt=''
-          className='shape-two rotateme'
         />
       </div>
     </section>

@@ -42,8 +42,6 @@ const Roadmap = () => {
     },
   ];
 
-  // const scrollRef = useHorizontalScroll();
-
   return (
     <section id='roadmap' className='roadmap-area pt-130 pb-130 area-bg-top'>
       <div className='container custom-container-two'>
