@@ -59,76 +59,22 @@ const FooterOne = () => {
                   className='footer-widget  wow fadeInUp'
                   data-wow-delay='.4s'
                 >
-                  <h4 className='fw-title'>Useful Links</h4>
+                  <h4 className='fw-title'>Меню</h4>
                   <div className='footer-link'>
                     <ul>
                       <li>
-                        <Link href='/'>Contact us</Link>
+                        <Link href='#header'>Калькулятор</Link>
                       </li>
                       <li>
-                        <Link href='/'>How it Works</Link>
+                        <Link href='#about'>О Нас</Link>
                       </li>
                       <li>
-                        <Link href='/'>Create</Link>
+                        <Link href='#roadmap'>Roadmap</Link>
                       </li>
                       <li>
-                        <Link href='/'>Explore</Link>
-                      </li>
-                      <li>
-                        <Link href='/'>Terms & Services</Link>
+                        <Link href='#faq'>FAQ</Link>
                       </li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              <div className='col-xl-2 col-lg-3 col-sm-6'>
-                <div
-                  className='footer-widget wow fadeInUp'
-                  data-wow-delay='.6s'
-                >
-                  <h4 className='fw-title'>Community</h4>
-                  <div className='footer-link'>
-                    <ul>
-                      <li>
-                        <Link href='/'>Help Center</Link>
-                      </li>
-                      <li>
-                        <Link href='/'>Partners</Link>
-                      </li>
-                      <li>
-                        <Link href='/'>Suggestions</Link>
-                      </li>
-                      <li>
-                        <Link href='/'>Blog</Link>
-                      </li>
-                      <li>
-                        <Link href='/'>Newsletters</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div className='col-xl-4 col-lg-4 col-md-6'>
-                <div
-                  className='footer-widget wow fadeInUp'
-                  data-wow-delay='.8s'
-                >
-                  <h4 className='fw-title'>Subscribe Newsletter</h4>
-                  <div className='footer-newsletter'>
-                    <p>
-                      Exerci tation ullamcorper suscipit lobortis nisl aliquip
-                      ex ea commodo
-                    </p>
-                    <form action='#'>
-                      <input
-                        type='email'
-                        placeholder='Info@gmail.com'
-                        required
-                      />
-                      <button type='submit'>
-                        <i className='fas fa-paper-plane'></i>
-                      </button>
-                    </form>
                   </div>
                 </div>
               </div>

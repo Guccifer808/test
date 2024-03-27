@@ -28,9 +28,24 @@
 21. Preloader
 
 */
+
 html {
   scroll-behavior: smooth !important;
 }
+
+::-webkit-scrollbar {
+  cursor: grab !important;
+  width: 8px;
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  cursor: grab !important;
+  background-color: rgb(0 0 0 / 50%);
+  border-radius: 10px;
+  border: 6px solid #333333;
+  background-clip: padding-box;
+}
+
 /* 1. Theme default css */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
@@ -1096,7 +1111,8 @@ label {
   left: 0;
   top: 0;
   width: 100%;
-  height: calc(100% - 164px);
+  /* height: calc(100% - 164px); */
+  height: 100%;
   z-index: -1;
 }
 .banner-bg-two::before {
@@ -1110,6 +1126,7 @@ label {
   width: 100%;
   height: 722px;
   z-index: -1;
+  margin-bottom: 38px;
 }
 .banner-area-two .banner-content img {
   margin-bottom: 0;
@@ -1121,6 +1138,12 @@ label {
   margin-bottom: 65px;
   line-height: 1.36;
   text-transform: none;
+}
+.banner-area-two .banner-calc-wrap {
+  /* height: 40vh; */
+}
+.banner-area-two .banner-calc-content {
+  min-height: 700px;
 }
 .banner-social-wrap {
   position: absolute;
@@ -3211,6 +3234,7 @@ label {
 .footer-area {
   position: relative;
   z-index: 1;
+  padding-top: 20px;
 }
 .footer-area::before {
   content: '';
@@ -3219,7 +3243,7 @@ label {
   top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(360deg, #564dca 94%, rgba(11, 29, 51, 0) 99.9%);
+  background: linear-gradient(360deg, #564dca 15%, #000 99.9%);
   /* background-color: #564dca; */
   z-index: -1;
 }

@@ -81,11 +81,35 @@ const HeaderTwo = () => {
   const { asPath, pathname } = useRouter();
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const sectionOffsets = {
+        header: document.getElementById('header').offsetTop,
+        about: document.getElementById('about').offsetTop,
+        roadmap: document.getElementById('roadmap').offsetTop,
+        faq: document.getElementById('faq').offsetTop,
+        // Add offsets for other sections as needed
+      };
+
+      let activeSection = '';
+      Object.entries(sectionOffsets).forEach(([key, value]) => {
+        if (scrollPosition >= value) {
+          activeSection = key;
+        }
+      });
+      setHash(activeSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
     setHash(asPath.split('#')[1]);
   }, [asPath]);
 
   const isActiveLink = (id) => {
-    return id == '#' + hash ? 'active' : '';
+    return id === `#${hash}` ? 'active' : '';
   };
 
   return (
@@ -131,16 +155,6 @@ const HeaderTwo = () => {
                         >
                           Калькулятор
                         </Link>
-                        {/* <ul className={cn('sub-menu')}>
-                          <li className={cn(pathname == '/' && 'active')}>
-                            <Link href='/'>Home One</Link>
-                          </li>
-                          <li
-                            className={cn(pathname == '/home-two' && 'active')}
-                          >
-                            <Link href='/home-two'>Home Two</Link>
-                          </li>
-                        </ul> */}
                       </li>
                       <li className={cn(hash == 'about' && 'active')}>
                         <Link
@@ -169,21 +183,6 @@ const HeaderTwo = () => {
                           Faq
                         </Link>
                       </li>
-                      {/* <li className={'menu-item-has-children'}>
-                        <Link href='/blog'>Blog</Link>
-                        <ul className={cn('sub-menu')}>
-                          <li className={cn(pathname == '/blog' && 'active')}>
-                            <Link href='/blog'>Our Blog</Link>
-                          </li>
-                          <li
-                            className={cn(
-                              pathname == '/blog/blog-details' && 'active'
-                            )}
-                          >
-                            <Link href='/blog/blog-details'>Blog Details</Link>
-                          </li>
-                        </ul>
-                      </li> */}
                     </ul>
                   </div>
                   <div className='header-action d-none d-md-block'>

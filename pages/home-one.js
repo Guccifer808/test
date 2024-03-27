@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Bigtech - ICO & Crypto Landing Page Template</title>
+        <title>FastMoney - Сервис по обмену валют в Таиланде</title>
         <meta name='description' content='' />
       </Head>
 
