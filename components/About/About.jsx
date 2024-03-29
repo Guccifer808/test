@@ -26,11 +26,11 @@ const About = () => {
                 <span className='sub-title'>Telegram-канал</span>
                 <h2 className='title'>Репутация - то, чем мы дорожим</h2>
               </div>
-              <p>
+              <p className='text-center'>
                 Нас рекомендуют друзьям и знакомым, а также оставляют реальные
                 отзывы в телеграм-канале сервиса
               </p>
-              <div className='about-list'>
+              <div className='about-list align-items-center d-flex justify-content-center'>
                 <ul>
                   <li>
                     <i className='fas fa-check'></i>Единственный
@@ -48,14 +48,15 @@ const About = () => {
                   </li>
                 </ul>
               </div>
-
-              <Link
-                href='https://t.me/fastmoneyphuket'
-                className='btn '
-                target='_blank'
-              >
-                Telegram-канал
-              </Link>
+              <div className='text-center text-md-left'>
+                <Link
+                  href='https://t.me/fastmoneyphuket'
+                  className='btn '
+                  target='_blank'
+                >
+                  Telegram-канал
+                </Link>
+              </div>
             </div>
           </div>
         </div>
