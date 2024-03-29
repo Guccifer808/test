@@ -13,7 +13,8 @@ const About = () => {
               className='about-img-two text-center wow fadeInLeft'
               data-wow-delay='.2s'
             >
-              <img src={'/img/images/h2_about_img_3.png'} alt='' />
+              {/* <img src={'/img/images/h2_about_img_3.png'} alt='' /> */}
+              <img src={'/img/images/mockup.png'} alt='' />
             </div>
           </div>
           <div className='col-lg-6'>
@@ -21,8 +22,8 @@ const About = () => {
               className='about-content-two wow fadeInRight'
               data-wow-delay='.2s'
             >
-              <div className='section-title mb-30 '>
-                <span className='sub-title '>Telegram-канал</span>
+              <div className='section-title mb-30 text-center text-md-left'>
+                <span className='sub-title'>Telegram-канал</span>
                 <h2 className='title'>Репутация - то, чем мы дорожим</h2>
               </div>
               <p>

@@ -35,7 +35,7 @@ html {
 
 ::-webkit-scrollbar {
   cursor: grab !important;
-  width: 8px;
+  width: 10px;
   background-color: transparent;
 }
 ::-webkit-scrollbar-thumb {
