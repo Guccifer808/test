@@ -3,7 +3,6 @@ import $ from 'jquery';
 
 import styles from './bannerTwo.module.css';
 import Link from 'next/link';
-import CurrencyProvider from '@/context/CurrencyContext';
 import Calculator from '../Calculator/Calculator';
 
 const BannerTwo = () => {
