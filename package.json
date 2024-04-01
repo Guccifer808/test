@@ -1,5 +1,5 @@
 {
-  "name": "bigtech_next",
+  "name": "fastMoney_next",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "@next/font": "13.1.6",
     "bootstrap": "^5.2.3",
     "classnames": "^2.3.2",
+    "firebase": "^10.10.0",
     "jquery": "^3.6.3",
     "next": "13.1.6",
     "react": "18.2.0",

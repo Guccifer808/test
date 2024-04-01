@@ -1,28 +1,21 @@
-import { Button, Grid } from '@mui/material';
-import { useContext } from 'react';
-import { CurrencyContext } from '@/context/CurrencyContext';
-import CompareArrowsIcon from '@mui/icons-material/CompareArrows'; // Import CompareArrowsIcon correctly
+import { Box, Grid } from '@mui/material';
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 
 const SwitchCurrency = () => {
-  const { fromCurrency, setFromCurrency, toCurrency, setToCurrency } =
-    useContext(CurrencyContext);
-
-  const handleSwitch = () => {
-    setFromCurrency(toCurrency);
-    setToCurrency(fromCurrency);
-  };
-
   return (
     <Grid item xs={12} md='auto'>
-      <Button
-        onClick={handleSwitch}
+      <Box
         sx={{
           borderRadius: 1,
           height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingBottom: '0.75rem',
         }}
       >
-        <CompareArrowsIcon sx={{ fontSize: 30 }} />
-      </Button>
+        <ArrowRightAltIcon sx={{ fontSize: 24, color: '#564dca' }} />
+      </Box>
     </Grid>
   );
 };

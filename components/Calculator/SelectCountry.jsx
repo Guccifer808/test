@@ -1,34 +1,31 @@
-import { useFetch } from '@/lib/hooks/useFetch';
-import { Autocomplete, Grid, Skeleton, TextField } from '@mui/material';
-
-import flagUSA from '@/public/img/icon/us.png';
-import flagRU from '@/public/img/icon/ru.png';
-import flagTH from '@/public/img/icon/th.png';
-
-const countryData = [
-  { name: 'United States', flag: flagUSA, currency: 'USD' },
-  { name: 'Russia', flag: flagRU, currency: 'RUB' },
-  { name: 'Thailand', flag: flagTH, currency: 'THB' },
-];
+import { Autocomplete, Grid, TextField } from '@mui/material';
 
 const SelectCountry = (props) => {
-  const { value, setValue, label } = props;
-
-  const dataCountries = countryData.map((country) => ({
-    label: `${country.currency} - ${country.name}`,
-    flag: country.flag,
-  }));
+  const { value, setValue, label, countryData, disableCurrencySelection } =
+    props;
 
   return (
-    <Grid item xs={12} md={3}>
+    <Grid item xs={12} md={3} sx={{ paddingBottom: '0.75rem' }}>
       <Autocomplete
-        value={value}
         disableClearable
+        value={value}
         onChange={(event, newValue) => {
-          setValue(newValue);
+          setValue(newValue ? newValue : null); // Set the entire country object as the value
         }}
-        options={dataCountries}
-        getOptionLabel={(option) => option.label}
+        options={countryData}
+        getOptionLabel={(option) => {
+          return option.currency;
+        }}
+        sx={{
+          '& .MuiOutlinedInput-root': {
+            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+              borderColor: '#564dca',
+            },
+          },
+        }}
+        // isOptionEqualToValue={(option, value) =>
+        //   option.currency === value.currency && option.flag === value.flag
+        // }
         renderOption={(props, option) => (
           <li {...props}>
             <img
@@ -36,10 +33,11 @@ const SelectCountry = (props) => {
               alt=''
               style={{ width: 24, marginRight: 8 }}
             />
-            {option.label}
+            {option.currency} - {option.name}
           </li>
         )}
         renderInput={(params) => <TextField {...params} label={label} />}
+        disabled={disableCurrencySelection} // Disable the Autocomplete if disableCurrencySelection is true
       />
     </Grid>
   );

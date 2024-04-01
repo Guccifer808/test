@@ -22,53 +22,7 @@ const BannerTwo = () => {
               {/* <img src={'/img/banner/banner_img.png'} alt='img' /> */}
             </div>
             <div className='banner-calc-wrap wow fadeInUp' data-wow-delay='.2s'>
-              <CurrencyProvider>
-                <Calculator />
-              </CurrencyProvider>
-              {/* <div className={styles.body}>
-                <div className={styles.container}>
-                  <h2>Обменять рубли на баты</h2>
-                  <form>
-                    <div className={styles.amount}>
-                      <p>Сума</p>
-                      <input type='text' value='1' />
-                    </div>
-                    <div className={styles.convertBox}>
-                      <div className={styles.from}>
-                        <p>Выберите валюту</p>
-                        <div className={styles.selectInput}>
-                          <img src='/img/icon/ru.png' />
-
-                          <select></select>
-                        </div>
-                      </div>
-                      <div className={styles.reverse}>
-                        <i className='fas fa-exchange-alt'></i>
-                      </div>
-                      <div className={styles.too}>
-                        <div className={styles.selectInput}>
-                          <img src='/img/icon/th.png' />
-                          
-                        </div>
-                      </div>
-                      <div className={styles.result}>
-                        Вы получите: ฿{result}
-                      </div>
-
-                      <div className=' d-flex menu-style-two'>
-                        <div className='d-flex  flex-md-row justify-content-center align-items-center gap-1 gap-sm-3'>
-                          <div className='header-btn'>
-                            <a className='btn'>Telegram</a>
-                          </div>
-                          <div className='header-btn '>
-                            <a className='btn'>WhatsApp</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div> */}
+              <Calculator />
             </div>
           </div>
         </div>
