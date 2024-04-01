@@ -53,11 +53,7 @@ const Calculator = () => {
   }, []);
 
   useEffect(() => {
-    console.log('Currency Rates:', currencyRates);
-
     if (Object.keys(currencyRates).length > 0) {
-      console.log('From Currency Rate:', currencyRates[fromCurrency.currency]);
-
       if (amount) {
         const fromRate = mapCurrencyToRate(fromCurrency.currency);
         const converted = parseFloat(amount) * fromRate;
@@ -68,8 +64,6 @@ const Calculator = () => {
     }
   }, [amount, fromCurrency, currencyRates]);
 
-  console.log('convertedAmount', convertedAmount);
-  console.log('amount', amount);
   // Function to map currency codes to rates
   const mapCurrencyToRate = (currencyCode) => {
     // Check if the currency code exists in the currencyRates object
@@ -93,6 +87,17 @@ const Calculator = () => {
     padding: '4rem 2rem',
     boxShadow: '0px 10px 15px -3px rgba(0,0,0,0.1)',
     position: 'relative',
+    '& .MuiFormLabel-root': {
+      color: '#564dca', // Color when focused
+      '&.Mui-focused': {
+        color: '#564dca', // Color when focused
+      },
+    },
+    '& .MuiOutlinedInput-root': {
+      '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+        borderColor: '#564dca',
+      },
+    }
   };
 
   return (

@@ -1,9 +1,9 @@
 import { Grid, InputAdornment, TextField } from '@mui/material';
 
 const InputAmout = ({ amount, setAmount, currency }) => {
-  const handleAmountChange = (event) => {
+  const handleAmountChange = (e) => {
     // Check if the entered value is a valid positive number within the desired range
-    let newAmount = parseFloat(event.target.value);
+    let newAmount = parseFloat(e.target.value);
     if (isNaN(newAmount) || newAmount < 0) {
       newAmount = ''; // Set to empty string if entered value is invalid
     } else if (newAmount > 1000000) {
@@ -28,15 +28,6 @@ const InputAmout = ({ amount, setAmount, currency }) => {
         }}
         // Add error handling for negative amounts
         error={parseFloat(amount) < 0}
-        // Provide fixed height for the helper text area
-        sx={{
-          '& .MuiOutlinedInput-root': {
-            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-              borderColor: '#564dca',
-            },
-          },
-          '& .MuiFormHelperText-root': { height: '0.75rem' },
-        }}
         // Provide error message if amount is negative
         helperText={
           parseFloat(amount) < 0 ? 'Сумма не может быть отрицательной' : ''

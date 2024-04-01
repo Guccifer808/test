@@ -16,13 +16,6 @@ const SelectCountry = (props) => {
         getOptionLabel={(option) => {
           return option.currency;
         }}
-        sx={{
-          '& .MuiOutlinedInput-root': {
-            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-              borderColor: '#564dca',
-            },
-          },
-        }}
         // isOptionEqualToValue={(option, value) =>
         //   option.currency === value.currency && option.flag === value.flag
         // }

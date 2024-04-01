@@ -1,13 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import $ from 'jquery';
-
-import styles from './bannerTwo.module.css';
-import Link from 'next/link';
+import React from 'react';
 import Calculator from '../Calculator/Calculator';
 
 const BannerTwo = () => {
-  const result = 100;
-
   return (
     <section className='banner-area-two'>
       <div className='banner-bg-two'></div>
@@ -59,21 +53,6 @@ const BannerTwo = () => {
           </li>
         </ul>
       </div>
-      {/* <div className='banner-scroll'>
-        <span>Scroll down</span>
-        <Link
-          href='#about'
-          data-target='#about'
-          onClick={() => handleClickScroll('about')}
-        >
-          <Image
-            src={'/img/icon/scroll_icon.svg'}
-            alt=''
-            width={24}
-            height={24}
-          />
-        </Link>
-      </div> */}
     </section>
   );
 };

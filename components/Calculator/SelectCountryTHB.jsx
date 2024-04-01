@@ -11,13 +11,7 @@ const SelectCountryTHB = ({ value, setValue, label, thbData }) => {
         getOptionLabel={(option) => {
           return option.currency;
         }}
-        sx={{
-          '& .MuiOutlinedInput-root': {
-            '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-              borderColor: '#564dca',
-            },
-          },
-        }}
+       
         renderOption={(props, option) => (
           <li {...props}>
             <img
