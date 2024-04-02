@@ -21,40 +21,6 @@ import { Button } from '@mui/material';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/firebase/firebase';
 
-function Copyright(props) {
-  return (
-    <Container component='main' maxWidth='xs'>
-      <Box
-        sx={{
-          // Fixed; Remove if needed
-          position: 'fixed',
-          bottom: '0.5rem',
-          width: 'auto',
-          textAlign: 'center',
-        }}
-      >
-        <Typography
-          variant='body2'
-          color='text.secondary'
-          align='center'
-          {...props}
-        >
-          {'Copyright © '}
-          <Link
-            color='inherit'
-            href='https://github.com/Guccifer808'
-            target='_blank'
-          >
-            Guccifer808
-          </Link>{' '}
-          {new Date().getFullYear()}
-          {'.'}
-        </Typography>
-      </Box>
-    </Container>
-  );
-}
-
 const drawerWidth = 240;
 
 const AppBar = styled(MuiAppBar, {
@@ -161,9 +127,6 @@ export default function Dashboard() {
               />
             </Typography>
             <IconButton color='inherit'>
-              {/* <Badge badgeContent={4} color='secondary'>
-                <NotificationsIcon />
-              </Badge> */}
               <Button
                 onClick={handleLogout}
                 variant='contained'
@@ -214,10 +177,6 @@ export default function Dashboard() {
           }}
         >
           <Toolbar />
-          <Container maxWidth='lg' sx={{ mt: 4, mb: 4 }}>
-            <Grid container spacing={3}></Grid>
-            <Copyright sx={{ pt: 4 }} />
-          </Container>
         </Box>
       </Box>
     </ThemeProvider>
