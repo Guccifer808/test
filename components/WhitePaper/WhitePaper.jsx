@@ -39,11 +39,11 @@ const WhitePaper = () => {
                   <li>Оплатить недвижимость в Таиланде</li>
                 </ul>
               </div>
-              {/* <div className='d-flex justify-content-center align-center '> */}
-              <Link href='/' className='btn'>
-                Telegram-Канал
-              </Link>
-              {/* </div> */}
+              <div className='d-flex justify-content-center align-center '>
+                <Link href='/' className='btn'>
+                  Telegram-Канал
+                </Link>
+              </div>
             </div>
           </div>
         </div>

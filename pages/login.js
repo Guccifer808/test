@@ -14,6 +14,7 @@ import { auth } from '@/firebase/firebase';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 import Alert from '@mui/material/Alert';
+import PageLoader from '@/components/PageLoader/PageLoader';
 
 const logo = '/img/logo/fm_logo.svg';
 
@@ -45,6 +46,7 @@ const defaultTheme = createTheme();
 
 export default function SignIn() {
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
   const handleSubmit = async (event) => {
@@ -54,6 +56,7 @@ export default function SignIn() {
     const password = data.get('password');
 
     try {
+      setLoading(true);
       await signInWithEmailAndPassword(auth, email, password);
       router.push('/dashboard');
     } catch (error) {
@@ -65,86 +68,92 @@ export default function SignIn() {
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <Container component='main' maxWidth='xs'>
-        <CssBaseline />
-        <Box
-          sx={{
-            marginTop: 8,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            '& .MuiFormLabel-root': {
-              color: '#564dca', // Color when focused
-              '&.Mui-focused': {
-                color: '#564dca', // Color when focused
-              },
-            },
-            '& .MuiOutlinedInput-root': {
-              '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
-                borderColor: '#564dca',
-              },
-            },
-          }}
-        >
-          <Avatar
-            sx={{
-              m: 2,
-              bgcolor: 'black',
-              height: '6rem',
-              width: '6rem',
-              border: '2px solid #564dca',
-            }}
-          >
-            <Image src={logo} width={64} height={64} alt='fastmoney' />
-          </Avatar>
-          <Typography component='h1' variant='h5'>
-            Вход в систему
-          </Typography>
-          <Box
-            component='form'
-            onSubmit={handleSubmit}
-            noValidate
-            sx={{ mt: 1 }}
-          >
-            <TextField
-              margin='normal'
-              required
-              fullWidth
-              id='email'
-              label='Email'
-              name='email'
-              autoComplete='email'
-              autoFocus
-              InputProps={{ style: { backgroundColor: '#fff' } }}
-            />
-            <TextField
-              margin='normal'
-              required
-              fullWidth
-              name='password'
-              label='Пароль'
-              type='password'
-              id='password'
-              autoComplete='current-password'
-              InputProps={{ style: { backgroundColor: '#fff' } }}
-            />
-
-            <Button
-              type='submit'
-              fullWidth
-              variant='contained'
-              sx={{ mt: 3, mb: 2, bgcolor: '#564dca' }}
-              //   onSubmit={handleSubmit}
+      {loading ? (
+        <PageLoader />
+      ) : (
+        <>
+          <Container component='main' maxWidth='xs'>
+            <CssBaseline />
+            <Box
+              sx={{
+                marginTop: 8,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                '& .MuiFormLabel-root': {
+                  color: '#564dca', // Color when focused
+                  '&.Mui-focused': {
+                    color: '#564dca', // Color when focused
+                  },
+                },
+                '& .MuiOutlinedInput-root': {
+                  '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                    borderColor: '#564dca',
+                  },
+                },
+              }}
             >
-              Войти
-            </Button>
-          </Box>
-        </Box>
-        <Container component='main' maxWidth='sm'>
-          {error && <Alert severity='error'>{error}</Alert>}
-        </Container>
-        <Copyright sx={{ mt: 8, mb: 4, color: 'white' }} />
-      </Container>
+              <Avatar
+                sx={{
+                  m: 2,
+                  bgcolor: 'black',
+                  height: '6rem',
+                  width: '6rem',
+                  border: '2px solid #564dca',
+                }}
+              >
+                <Image src={logo} width={64} height={64} alt='fastmoney' />
+              </Avatar>
+              <Typography component='h1' variant='h5'>
+                Вход в систему
+              </Typography>
+              <Box
+                component='form'
+                onSubmit={handleSubmit}
+                noValidate
+                sx={{ mt: 1 }}
+              >
+                <TextField
+                  margin='normal'
+                  required
+                  fullWidth
+                  id='email'
+                  label='Email'
+                  name='email'
+                  autoComplete='email'
+                  autoFocus
+                  InputProps={{ style: { backgroundColor: '#fff' } }}
+                />
+                <TextField
+                  margin='normal'
+                  required
+                  fullWidth
+                  name='password'
+                  label='Пароль'
+                  type='password'
+                  id='password'
+                  autoComplete='current-password'
+                  InputProps={{ style: { backgroundColor: '#fff' } }}
+                />
+
+                <Button
+                  type='submit'
+                  fullWidth
+                  variant='contained'
+                  sx={{ mt: 3, mb: 2, bgcolor: '#564dca' }}
+                  //   onSubmit={handleSubmit}
+                >
+                  Войти
+                </Button>
+              </Box>
+            </Box>
+            <Container component='main' maxWidth='sm'>
+              {error && <Alert severity='error'>{error}</Alert>}
+            </Container>
+            <Copyright sx={{ mt: 8, mb: 4, color: 'white' }} />
+          </Container>
+        </>
+      )}
     </ThemeProvider>
   );
 }

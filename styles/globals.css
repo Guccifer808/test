@@ -289,6 +289,22 @@ label {
   border-color: #564dca;
   color: #fff;
 }
+.btn.btn-tg {
+  background-color: #2aabee;
+}
+.btn.btn-tg:hover {
+  border-color: #2aabee;
+  color: #000;
+  background-color: #fff;
+}
+.btn.btn-wa {
+  background-color: #25d366;
+}
+.btn.btn-wa:hover {
+  border-color: #25d366;
+  color: #000;
+  background-color: #fff;
+}
 .btn.btn-two {
   background: #564dca;
   border-radius: 100px;
@@ -1139,9 +1155,7 @@ label {
   line-height: 1.36;
   text-transform: none;
 }
-.banner-area-two .banner-calc-wrap {
-  /* height: 40vh; */
-}
+
 .banner-area-two .banner-calc-content {
   min-height: 700px;
 }
@@ -1674,20 +1688,7 @@ label {
   width: 100%;
   height: 50px;
 }
-/* .choose-bg::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-image: url(/img/bg/shape01.svg);
-  background-position: center;
-  background-repeat: repeat;
-  width: 100%;
-  height: 19px;
-} */
-.choose-item-two {
-  /* margin-bottom: 30px; */
-}
+
 .choose-icon-two {
   margin-bottom: 35px;
 }
