@@ -20,18 +20,20 @@ const FooterOne = () => {
             <div className='row'>
               <div className='col-xl-3 col-lg-4 col-md-6'>
                 <div
-                  className='footer-widget wow fadeInUp'
+                  className='footer-widget wow fadeInUp justify-content-center justify-content-md-start d-flex flex-column'
                   data-wow-delay='.2s'
                 >
-                  <Link href='/' className='f-logo'>
-                    <img src={'/img/logo/fm_logo.svg'} alt='FastMoney Logo' />
-                  </Link>
-                  <div className='footer-content'>
-                    <p>
-                      A new way to make the payments easy, reliable and 100%
-                      secure. claritatem itamconse quat. Exerci tationulla
+                  <div className='d-flex justify-content-center justify-content-md-start'>
+                    <Link href='/' className='f-logo '>
+                      <img src={'/img/logo/fm_logo.svg'} alt='FastMoney Logo' />
+                    </Link>
+                  </div>
+                  <div className='footer-content '>
+                    <p className=''>
+                      Надежный сервис обмена валюты без лишних хлопот и скрытых
+                      комиссий. Быстро, выгодно, безопасно
                     </p>
-                    <ul className='footer-social'>
+                    <ul className='footer-social justify-content-center justify-content-md-start'>
                       <li>
                         <a
                           href='https://t.me/+E8eKDKmN0U5lOTYy'
@@ -56,7 +58,7 @@ const FooterOne = () => {
               </div>
               <div className='col-xl-3 col-lg-5 col-sm-6'>
                 <div
-                  className='footer-widget  wow fadeInUp'
+                  className='footer-widget wow fadeInUp text-center'
                   data-wow-delay='.4s'
                 >
                   <h4 className='fw-title'>Меню</h4>
@@ -73,6 +75,21 @@ const FooterOne = () => {
                       </li>
                       <li>
                         <Link href='#faq'>FAQ</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className='col-xl-3 col-lg-5 col-sm-6 text-center'>
+                <div
+                  className='footer-widget wow fadeInUp'
+                  data-wow-delay='.4s'
+                >
+                  <h4 className='fw-title'>Адрес</h4>
+                  <div className='footer-link text-white '>
+                    <ul>
+                      <li>
+                        106, Cherngtalay, 14, Tambon Choeng Thale, Phuket, 83110
                       </li>
                     </ul>
                   </div>

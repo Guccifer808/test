@@ -2372,7 +2372,7 @@ label {
 /* 15. Faq */
 .faq-area {
   background: #f3f6fc;
-  padding: 120px 0 130px;
+  padding: 120px 0 120px;
   position: relative;
   z-index: 1;
 }
@@ -3292,10 +3292,16 @@ label {
   font-size: 15px;
   line-height: 26px;
   color: #edf6ff;
+  text-align: left;
+}
+@media (max-width: 640px) {
+  .footer-content p {
+    text-align: center;
+  }
 }
 .footer-content .footer-social {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin: 0 -7px;
 }
 .footer-content .footer-social li {
@@ -3368,43 +3374,6 @@ label {
 .footer-top .row [class*='col-']:nth-child(4) .footer-widget {
   margin-left: 75px;
 }
-.footer-newsletter p {
-  font-size: 15px;
-  line-height: 26px;
-  margin-bottom: 60px;
-  color: #a4b4c3;
-}
-.footer-newsletter form {
-  position: relative;
-}
-.footer-newsletter form input {
-  width: 100%;
-  border: none;
-  background: rgb(118 118 130 / 10%);
-  border-radius: 10px;
-  font-weight: 400;
-  font-size: 15px;
-  padding: 23px 80px 23px 25px;
-  color: #fff;
-  height: 72px;
-}
-.footer-newsletter form input::placeholder {
-  font-weight: 400;
-  font-size: 15px;
-  color: #fff;
-}
-.footer-newsletter form button {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 65px;
-  height: 72px;
-  background: #00c4f4;
-  border-radius: 10px;
-  font-size: 20px;
-  color: #fff;
-  border: none;
-}
 .footer-bottom {
   border-top: 1px solid rgb(255 255 255 / 6%);
   padding: 27px 0;
@@ -3430,126 +3399,6 @@ label {
 }
 .footer-menu ul li a:hover {
   color: #fff;
-}
-
-/* footer-two */
-.footer-area-two .footer-top {
-  padding: 70px 40px 65px;
-}
-.footer-menu-two .navigation {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.footer-menu-two .navigation li {
-  margin-right: 60px;
-}
-.footer-menu-two .navigation li:last-child {
-  margin-right: 0;
-}
-.footer-menu-two .navigation li a {
-  color: #030b15;
-  font-weight: 500;
-  font-size: 16px;
-}
-.footer-menu-two .navigation li a:hover {
-  color: #00c4f4;
-}
-.footer-area-two .footer-social ul {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.footer-area-two .footer-social ul li {
-  margin-right: 40px;
-}
-.footer-area-two .footer-social ul li:last-child {
-  margin-right: 0;
-}
-.footer-area-two .footer-social ul li a {
-  color: #0a142f;
-  opacity: 0.3;
-  font-size: 24px;
-  line-height: 1;
-}
-.footer-area-two .footer-social ul li a:hover {
-  color: #00c4f4;
-  opacity: 1;
-}
-.footer-area-two .footer-bottom {
-  border-top: 1px solid #f0f3f9;
-  padding: 40px 40px;
-}
-.footer-area-two .copyright-text p {
-  color: #282f3b;
-  margin-bottom: 0;
-  font-size: 15px;
-  font-weight: 500;
-}
-.footer-area-two .scroll-up .scroll-to-target {
-  width: 46px;
-  height: 46px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background: #564dca;
-  padding: 0 0;
-  border: none;
-  color: #fff;
-  font-size: 17px;
-  margin: -60px auto 15px;
-}
-.footer-area-two .scroll-up .scroll-to-target:hover {
-  background: #00c4f4;
-}
-.footer-area-two .scroll-up span {
-  display: block;
-  color: #0a142f;
-  font-size: 14px;
-  font-weight: 500;
-}
-.footer-bottom-menu ul {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.footer-bottom-menu ul li {
-  margin-right: 30px;
-}
-.footer-bottom-menu ul li:last-child {
-  margin-right: 0;
-}
-.footer-bottom-menu ul li a {
-  font-size: 15px;
-  color: #0a142f;
-  font-weight: 500;
-}
-.footer-bottom-menu ul li a:hover {
-  color: #00c4f4;
-}
-
-/* footer-three */
-.footer-bg {
-  background-image: url(/img/bg/breadcrumb-bg.jpg);
-  background-size: cover;
-  background-position: center;
-  position: relative;
-  padding-top: 120px;
-}
-.footer-bg::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: url(/img/bg/footer_shape.png);
-  background-repeat: repeat;
-  background-position: center;
-  width: 100%;
-  height: 29px;
-}
-.footer-area-three .footer-top {
-  padding: 0 0 50px;
 }
 
 .bt-roadmap-wrap {

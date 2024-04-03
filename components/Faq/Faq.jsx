@@ -93,7 +93,7 @@ const Faq = () => {
 
         <div className='row'>
           <div className='col-lg-12'>
-            <div className='section-title section-title-two text-center mb-60'>
+            <div className='section-title section-title-two text-center mb-30'>
               <h2 className='title'>FAQ</h2>
             </div>
 
