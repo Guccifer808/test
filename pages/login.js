@@ -26,7 +26,7 @@ function Copyright(props) {
       align='center'
       {...props}
     >
-      {'Copyright © '}
+      {'© '}
       <Link
         color='inherit'
         href='https://github.com/Guccifer808'
@@ -112,6 +112,7 @@ export default function SignIn() {
                 onSubmit={handleSubmit}
                 noValidate
                 sx={{ mt: 1 }}
+                maxWidth='90%'
               >
                 <TextField
                   margin='normal'
@@ -135,16 +136,28 @@ export default function SignIn() {
                   autoComplete='current-password'
                   InputProps={{ style: { backgroundColor: '#fff' } }}
                 />
-
-                <Button
-                  type='submit'
-                  fullWidth
-                  variant='contained'
-                  sx={{ mt: 3, mb: 2, bgcolor: '#564dca' }}
-                  //   onSubmit={handleSubmit}
-                >
-                  Войти
-                </Button>
+                <Box textAlign='center'>
+                  <Button
+                    type='submit'
+                    variant='contained'
+                    sx={{
+                      width: '50%',
+                      mt: 3,
+                      mb: 2,
+                      bgcolor: '#564dca',
+                      backgroundColor: '#564dca',
+                      border: '1px solid #564dca',
+                      borderRadius: '70px',
+                      '&:hover': {
+                        backgroundColor: 'white',
+                        color: 'black',
+                        border: '1px solid #564dca',
+                      },
+                    }}
+                  >
+                    Войти
+                  </Button>
+                </Box>
               </Box>
             </Box>
             <Container component='main' maxWidth='sm'>

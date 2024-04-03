@@ -14,9 +14,10 @@ import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import { mainListItems, secondaryListItems } from '@/lib/listItems';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
-import { Button } from '@mui/material';
+import { Button, Container } from '@mui/material';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/firebase/firebase';
+import UpdateCurrencyRatesForm from '@/components/Dashboard/UpdateCurrencyRatesForm';
 
 const drawerWidth = 240;
 
@@ -69,7 +70,7 @@ const defaultTheme = createTheme();
 
 export default function Dashboard() {
   const router = useRouter();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -123,22 +124,25 @@ export default function Dashboard() {
                 height='64'
               />
             </Typography>
-            <IconButton color='inherit'>
-              <Button
-                onClick={handleLogout}
-                variant='contained'
-                color='primary'
-                sx={{
-                  backgroundColor: '#564dca',
-                  '&:hover': {
-                    backgroundColor: 'white',
-                    color: 'black',
-                  },
-                }}
-              >
-                Выход
-              </Button>
-            </IconButton>
+            {/* <IconButton color='inherit' > */}
+            <Button
+              variant='contained'
+              color='primary'
+              sx={{
+                backgroundColor: '#564dca',
+                border: '1px solid #564dca',
+                borderRadius: '70px',
+                '&:hover': {
+                  backgroundColor: 'white',
+                  color: 'black',
+                  border: '1px solid #564dca',
+                },
+              }}
+              onClick={handleLogout}
+            >
+              Выход
+            </Button>
+            {/* </IconButton> */}
           </Toolbar>
         </AppBar>
         <Drawer variant='permanent' open={open}>
@@ -174,6 +178,9 @@ export default function Dashboard() {
           }}
         >
           <Toolbar />
+          <Container maxWidth='sm' sx={{ mt: 4, mb: 4 }}>
+            <UpdateCurrencyRatesForm />
+          </Container>
         </Box>
       </Box>
     </ThemeProvider>

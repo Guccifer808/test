@@ -2203,17 +2203,12 @@ label {
 .document-content .document-list li:last-child {
   margin-bottom: 0;
 }
-.document-content .document-list li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 7px;
-  height: 7px;
-  background: #564dca;
-  border-radius: 50%;
+
+.document-list i {
+  color: #564dca;
+  margin-right: 10px;
 }
+
 .btn {
   background: #564dca;
   font-size: 14px;
