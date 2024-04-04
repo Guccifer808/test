@@ -1617,7 +1617,7 @@ label {
 }
 .choose-icon img {
   object-fit: contain;
-  max-height: 60%;
+  max-height: 85%;
 }
 .choose-item:hover .choose-icon {
   border-color: #564dca;

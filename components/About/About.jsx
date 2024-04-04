@@ -13,7 +13,6 @@ const About = () => {
               className='about-img-two text-center wow fadeInLeft'
               data-wow-delay='.2s'
             >
-              {/* <img src={'/img/images/h2_about_img_3.png'} alt='' /> */}
               <img
                 src={'/img/images/mockup.png'}
                 alt='FastMoney'
@@ -58,7 +57,7 @@ const About = () => {
                   className='btn '
                   target='_blank'
                 >
-                  Telegram-канал
+                  Telegram-канал <i className='fab fa-telegram'></i>
                 </Link>
               </div>
             </div>

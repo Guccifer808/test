@@ -114,8 +114,9 @@ const Calculator = () => {
           target='_blank'
           rel='noreferrer'
         >
-          Telegram
+          Telegram <i className='fab fa-telegram'></i>
         </Link>
+
         <Link
           href='https://wa.me/79520042864'
           className='btn btn-wa'
@@ -123,7 +124,7 @@ const Calculator = () => {
           rel='noreferrer'
           onClick={handleWhatsAppClick}
         >
-          WhatsApp
+          WhatsApp <i className='fab fa-whatsapp'></i>
         </Link>
       </div>
     </Container>
