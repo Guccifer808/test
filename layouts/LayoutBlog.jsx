@@ -1,14 +1,14 @@
-import React from "react";
-import PageLoader from "../components/PageLoader/PageLoader";
-import cn from "classnames";
-import HeaderTwo from "../components/Header/HeaderTwo";
-import FooterThree from "../components/Footer/FooterThree";
-import BlogBreadcrumb from "../components/BlogBreadcrumb/BlogBreadcrumb";
-import BlogAside from "../components/BlogAside/BlogAside";
+import React from 'react';
+import PageLoader from '../components/PageLoader/PageLoader';
+import cn from 'classnames';
+import HeaderTwo from '../components/Header/HeaderTwo';
+import FooterOne from '../components/Footer/FooterOne';
+import BlogBreadcrumb from '../components/BlogBreadcrumb/BlogBreadcrumb';
+import BlogAside from '../components/BlogAside/BlogAside';
 
 const LayoutBlog = (props) => {
   return (
-    <div className={cn("white-background")}>
+    <div className={cn('white-background')}>
       <PageLoader />
 
       <HeaderTwo />
@@ -16,12 +16,12 @@ const LayoutBlog = (props) => {
       <main>
         <BlogBreadcrumb title={props.pageTitle} item={props.item} />
 
-        <section className="blog-area pt-130 pb-130">
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-8">{props.children}</div>
+        <section className='blog-area pt-130 pb-130'>
+          <div className='container'>
+            <div className='row'>
+              <div className='col-lg-8'>{props.children}</div>
 
-              <div className="col-lg-4">
+              <div className='col-lg-4'>
                 <BlogAside />
               </div>
             </div>
@@ -29,7 +29,7 @@ const LayoutBlog = (props) => {
         </section>
       </main>
 
-      <FooterThree />
+      <FooterOne />
     </div>
   );
 };
