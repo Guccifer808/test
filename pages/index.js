@@ -16,7 +16,7 @@ export default function HomeTwo() {
   return (
     <>
       <Head>
-        <title>FastMoney - Сервис по обмену валют в Таиланде</title>
+        <title>FastMoney - Сервис по обмену валют</title>
         <meta name='description' content='' />
       </Head>
 

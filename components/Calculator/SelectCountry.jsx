@@ -4,6 +4,10 @@ const SelectCountry = (props) => {
   const { value, setValue, label, countryData, disableCurrencySelection } =
     props;
 
+  // Silence MUI Autocomplete warnings locally
+  // Why: THB is not present in countryData (?)
+  console.warn = () => {};
+
   return (
     <Grid item xs={12} md={3} sx={{ paddingBottom: '0.75rem' }}>
       <Autocomplete
@@ -16,9 +20,9 @@ const SelectCountry = (props) => {
         getOptionLabel={(option) => {
           return option.currency;
         }}
-        // isOptionEqualToValue={(option, value) =>
-        //   option.currency === value.currency && option.flag === value.flag
-        // }
+        isOptionEqualToValue={(option, value) =>
+          option.currency === value.currency
+        }
         renderOption={(props, option) => (
           <li {...props}>
             <img
