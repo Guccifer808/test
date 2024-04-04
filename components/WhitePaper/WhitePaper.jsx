@@ -59,7 +59,11 @@ const WhitePaper = () => {
               </div>
               {/* </div> */}
               <div className='d-flex justify-content-center align-center '>
-                <Link href='/' className='btn'>
+                <Link
+                  href='https://t.me/fastmoneyphuket'
+                  className='btn'
+                  target='_blank'
+                >
                   Telegram-Канал <i className='fab fa-telegram'></i>
                 </Link>
               </div>

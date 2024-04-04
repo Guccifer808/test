@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import HeaderTwo from '@/components/Header/HeaderTwo';
+import HeaderLegal from '@/components/Header/HeaderLegal';
 
 import FooterOne from '@/components/Footer/FooterOne';
 
@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
         <title>FastMoney - Политика конфиденциальности</title>
         <meta name='description' content='' />
       </Head>
-      <HeaderTwo />
+      <HeaderLegal />
 
       <main className='fix container custom-container-one'>
         <div className='pt-160'>
