@@ -29,7 +29,7 @@ const Calculator = () => {
   const boxStyles = {
     background: '#fdfdfd',
     marginTop: '10%',
-    marginBottom: '10%',
+    marginBottom: '15%',
     textAlign: 'center',
     color: '#222',
     minHeight: '20rem',
