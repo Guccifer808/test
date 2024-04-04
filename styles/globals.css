@@ -2208,7 +2208,23 @@ label {
   color: #564dca;
   margin-right: 10px;
 }
-
+.document-img img {
+  object-fit: contain;
+  height: 575px;
+}
+@media (max-width: 640px) {
+  .document-img-mob img {
+    height: 375px;
+  }
+  .document-img {
+    display: none;
+  }
+}
+@media (min-width: 640px) {
+  .document-img-mob {
+    display: none;
+  }
+}
 .btn {
   background: #564dca;
   font-size: 14px;

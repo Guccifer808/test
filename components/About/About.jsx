@@ -14,7 +14,11 @@ const About = () => {
               data-wow-delay='.2s'
             >
               {/* <img src={'/img/images/h2_about_img_3.png'} alt='' /> */}
-              <img src={'/img/images/mockup.png'} alt='' />
+              <img
+                src={'/img/images/mockup.png'}
+                alt='FastMoney'
+                loading='lazy'
+              />
             </div>
           </div>
           <div className='col-lg-6'>

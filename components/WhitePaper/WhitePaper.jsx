@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const WhitePaper = () => {
   return (
@@ -12,16 +11,15 @@ const WhitePaper = () => {
               className='document-img text-center wow fadeInUp'
               data-wow-delay='.2s'
             >
-              <Image
-                src={'/img/images/mockup1.png'}
+              <img
+                src={'/img/images/mockup4.png'}
                 alt='FastMoney mockup'
-                width={390}
-                height={700}
+                loading='lazy'
               />
             </div>
           </div>
 
-          <div className='col-lg-5 col-md-7'>
+          <div className='col-lg-5 col-md-7 order-1 order-lg-2'>
             <div
               className='document-content mt-50 wow fadeInRight'
               data-wow-delay='.2s'
@@ -32,18 +30,16 @@ const WhitePaper = () => {
                   C нами вы <span> сможете</span>
                 </h2>
               </div>
-              {/* <div className='row align-items-center justify-content-center d-flex flex-column'> */}
-              {/* <ul className='document-list row '>
-                  <li>
-                    <i className='fas fa-check'></i> Поменять безналичные рубли
-                    или USDT на наличные/безналичные баты
-                  </li>
-                  <li>
-                    Оплатить инвойс, работаем с юр. лицами для оплаты товаров и
-                    услуг
-                  </li>
-                  <li>Оплатить недвижимость в Таиланде</li>
-                </ul> */}
+              <div
+                className='document-img-mob text-center wow fadeInUp mb-5'
+                data-wow-delay='.2s'
+              >
+                <img
+                  src={'/img/images/mockup4.png'}
+                  alt='FastMoney mockup'
+                  loading='lazy'
+                />
+              </div>
               <div className='about-list align-items-center d-flex justify-content-center'>
                 <ul className='document-list row '>
                   <li>
