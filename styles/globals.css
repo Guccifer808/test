@@ -40,23 +40,28 @@ html {
 }
 ::-webkit-scrollbar-thumb {
   cursor: grab !important;
-  background-color: rgb(0 0 0 / 50%);
+  /* background-color: rgb(0 0 0 / 50%); */
+  background-color: #030b15;
   border-radius: 10px;
-  border: 6px solid #333333;
+  border: 6px solid #030b15;
   background-clip: padding-box;
 }
 
 /* 1. Theme default css */
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Involve', sans-serif;
   font-weight: normal;
   font-size: 16px;
   color: #a4b4c3;
   font-style: normal;
-  background-color: #030b15;
+  background-color: #fff;
   line-height: 1.75;
   overflow-x: hidden;
+}
+
+body.area-bg,
+.area-bg {
+  background-color: #030b15;
 }
 body.white-background,
 .white-background {
@@ -125,7 +130,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'CodeNext Trial', sans-serif;
   color: #ffffff;
   margin-top: 0px;
   font-style: normal;
@@ -144,13 +149,13 @@ h1 {
   font-size: 40px;
 }
 h2 {
-  font-size: 35px;
+  font-size: 34px;
 }
 h3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 h4 {
-  font-size: 22px;
+  font-size: 16px;
 }
 h5 {
   font-size: 18px;
@@ -1151,9 +1156,52 @@ label {
   margin-bottom: 0;
 }
 .banner-area-two .banner-content .title {
-  margin-bottom: 65px;
+  margin-bottom: 30px;
   line-height: 1.36;
   text-transform: none;
+  /* font-size: 3rem; */
+  /* font-weight: bold; */
+  position: relative;
+  display: inline-block;
+}
+
+.banner-area-two .banner-content .title::after {
+  content: 'Fast Money Exchange';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    45deg,
+    #564dca,
+    #f1eeee,
+    #564dca,
+    #f1eeee,
+    /* #f1eeee,
+    #0e254e, */ #564dca
+  );
+  background-size: 400% 400%;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: animateGradient 10s ease infinite;
+}
+
+@keyframes animateGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.banner-area-two .banner-content .banner-sub-title {
+  font-family: 'Involve', sans-serif;
 }
 
 .banner-area-two .banner-calc-content {
@@ -1161,8 +1209,8 @@ label {
 }
 .banner-social-wrap {
   position: absolute;
-  left: 100px;
-  bottom: 90px;
+  left: 50px;
+  bottom: 125px;
 }
 .banner-social-wrap li:hover {
   background-color: #564dca;
@@ -1410,7 +1458,7 @@ label {
 .section-title .sub-title {
   text-transform: uppercase;
   color: #000;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   position: relative;
   letter-spacing: 0.09em;
@@ -1474,7 +1522,7 @@ label {
 
 /* about-two */
 .about-area-two {
-  padding: 130px 0;
+  padding: 60px 0;
   position: relative;
 }
 
@@ -1524,7 +1572,7 @@ label {
 }
 .about-content-two .about-list ul li {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   color: #030b15;
   margin-bottom: 10px;
 }
@@ -1535,9 +1583,7 @@ label {
   color: #564dca;
   margin-right: 10px;
 }
-.about-content-two .about-list .about-list-badge {
-  margin-left: 3px;
-}
+
 .about-shape-wrap img {
   position: absolute;
 }
@@ -1629,6 +1675,7 @@ label {
   font-weight: 500;
   text-transform: none;
   line-height: 1.27;
+  text-wrap: nowrap;
 }
 .choose-content p {
   margin-bottom: 0px;
@@ -1651,12 +1698,7 @@ label {
   width: 100%;
   height: 3px;
   border-radius: 0;
-  /* background: rgba(255, 255, 255, 0.1); */
-  /* overflow: hidden;
-  background-image: linear-gradient(to right, #00c4f4, #00c4f4);
-  background-repeat: no-repeat;
-  background-size: 0 100%;
-  transition: background-size 0.4s ease-in-out; */
+
   margin-top: 50px;
   position: relative;
 }
@@ -1696,7 +1738,7 @@ label {
   height: 48px;
 }
 .choose-item-two .choose-content {
-  width: 77%;
+  width: 100%;
 }
 
 /* 9. Chart */
@@ -1826,8 +1868,9 @@ label {
   padding: 64px 75px 33px;
   position: relative;
   margin-top: -120px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
 }
+
 .counter-inner::before {
   content: '';
   position: absolute;
@@ -1837,7 +1880,7 @@ label {
   width: 80%;
   height: 80%;
   border-radius: 20px;
-  background: #00c4f4;
+  background: #564dca;
   opacity: 0.08;
   z-index: -1;
 }
@@ -2412,7 +2455,7 @@ label {
 .faq-wrap .accordion-button {
   font-size: 24px;
   font-weight: 500;
-  font-family: 'Poppins';
+  font-family: 'Involve', sans-serif;
   line-height: 1.25;
   padding: 37px 100px 37px 55px;
   border-radius: 35px;
@@ -2441,7 +2484,7 @@ label {
 .faq-wrap .accordion-body p {
   margin-bottom: 0;
   color: #727885;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.55;
 }
 .faq-wrap .accordion-item:last-of-type .accordion-button.collapsed {

@@ -22,7 +22,6 @@ const CounterAreaItem = (props) => {
             duration={1000}
             animation={'count'}
           />
-          +
         </h2>
         <p>{props.title}</p>
       </div>

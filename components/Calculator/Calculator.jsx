@@ -16,7 +16,7 @@ import useCurrencyRates from '@/lib/hooks/useCurrencyRates';
 const Calculator = () => {
   const [amount, setAmount] = useState('');
   const [convertedAmount, setConvertedAmount] = useState(null);
-  const defaultFromCurrency = countryData[0]; // Default to the first currency in the array
+  const defaultFromCurrency = countryData[2]; // Default currency
   const { currencyRates, mapCurrencyToRate } = useCurrencyRates(); // Hook for mapping currency codes to rates and fetching the rates
 
   const [fromCurrency, setFromCurrency] = useState(defaultFromCurrency);
@@ -72,8 +72,15 @@ const Calculator = () => {
 
   return (
     <Container maxWidth='md' sx={boxStyles}>
-      <Typography variant='h5' sx={{ marginBottom: '2rem', color: 'black' }}>
-        Заголовок калькулятора
+      <Typography
+        variant='h5'
+        sx={{
+          marginBottom: '2rem',
+          color: 'black',
+          fontFamily: 'Involve, sans-serif',
+        }}
+      >
+        высокая скорость обработки заявок и уверенность в каждой операции
       </Typography>
       <Grid container spacing={2}>
         <InputAmout
@@ -99,11 +106,15 @@ const Calculator = () => {
       <Box sx={{ textAlign: 'center', marginTop: '1rem', minHeight: '2rem' }}>
         <Typography
           variant='h6'
-          sx={{ marginBottom: '5px', fontWeight: 'bold', color: 'black' }}
+          sx={{
+            marginBottom: '5px',
+            fontWeight: 'bold',
+            color: 'black',
+            fontFamily: 'Involve, sans-serif',
+          }}
         >
-          {amount} {fromCurrency.name} ({fromCurrency.currency}) ={' '}
-          {convertedAmount ? convertedAmount : '0.00'} {toCurrency.name} (
-          {toCurrency.currency})
+          {amount} {fromCurrency.currency} ={' '}
+          {convertedAmount ? convertedAmount : '0.00'} {toCurrency.currency}
         </Typography>
       </Box>
 
@@ -114,7 +125,7 @@ const Calculator = () => {
           target='_blank'
           rel='noreferrer'
         >
-          Telegram <i className='fab fa-telegram'></i>
+          Обменять в Telegram <i className='fab fa-telegram-plane'></i>
         </Link>
 
         <Link
@@ -124,7 +135,7 @@ const Calculator = () => {
           rel='noreferrer'
           onClick={handleWhatsAppClick}
         >
-          WhatsApp <i className='fab fa-whatsapp'></i>
+          Обменять в WhatsApp <i className='fab fa-whatsapp'></i>
         </Link>
       </div>
     </Container>

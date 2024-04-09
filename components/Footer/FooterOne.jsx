@@ -39,7 +39,7 @@ const FooterOne = () => {
                           href='https://t.me/+E8eKDKmN0U5lOTYy'
                           target='_blank'
                         >
-                          <i className='fab fa-telegram'></i>
+                          <i className='fab fa-telegram-plane'></i>
                         </a>
                       </li>
                       <li>

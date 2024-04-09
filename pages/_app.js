@@ -5,6 +5,7 @@ import '@/styles/react-odometer-theme.css';
 import '@/styles/default.css';
 import '@/styles/globals.css';
 import '@/styles/responsive.css';
+import '@/styles/fonts.css';
 import dynamic from 'next/dynamic';
 import { useEffect } from 'react';
 import Head from 'next/head';
@@ -30,7 +31,6 @@ export default function App({ Component, pageProps }) {
     wow.init();
   }, []);
 
-  // return <Component {...pageProps} />;
   return (
     <>
       <Head>

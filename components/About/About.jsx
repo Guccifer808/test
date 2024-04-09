@@ -26,28 +26,34 @@ const About = () => {
               data-wow-delay='.2s'
             >
               <div className='section-title mb-30 text-center text-md-left'>
-                <span className='sub-title'>Telegram-канал</span>
+                <span className='sub-title'>Репутация и гарантии</span>
                 <h2 className='title'>Репутация - то, чем мы дорожим</h2>
               </div>
               <p className='text-center'>
-                Нас рекомендуют друзьям и знакомым, а также оставляют реальные
-                отзывы в телеграм-канале сервиса
+                Мы имеем не только лицензию банка Таиланда, но и верификацию в
+                telegram на нашем канале - синюю галочку справа от названия
               </p>
-              <div className='about-list align-items-center d-flex justify-content-center'>
+              <div className='about-list align-items-center d-flex justify-content-center w-100'>
                 <ul>
                   <li>
-                    <i className='fas fa-check'></i>Единственный
-                    верифицированный канал
-                    <Image
-                      src={verified}
-                      alt='verified badge'
-                      width={20}
-                      heigh={20}
-                      className='about-list-badge'
-                    />
+                    <i className='fas fa-check'></i>
+                    <span>
+                      Наш официальный telegram-канал имеет синюю галочку! Так вы
+                      можете отличить наш канал от каналов копий{' '}
+                      <Image
+                        src={verified}
+                        alt='verified badge'
+                        width={18}
+                        heigh={18}
+                      />
+                    </span>
                   </li>
                   <li>
-                    <i className='fas fa-check'></i>Тысячи позитивных отзывов
+                    <i className='fas fa-check'></i>Сотни отзывов от клиентов
+                  </li>
+                  <li>
+                    <i className='fas fa-check'></i>Актуальные данные по всем
+                    услугам
                   </li>
                 </ul>
               </div>
@@ -57,7 +63,7 @@ const About = () => {
                   className='btn '
                   target='_blank'
                 >
-                  Telegram-канал <i className='fab fa-telegram'></i>
+                  Telegram-канал <i className='fab fa-telegram-plane'></i>
                 </Link>
               </div>
             </div>

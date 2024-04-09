@@ -127,7 +127,7 @@ const WhyChooseUs = () => {
             <div className='section-title text-center mb-50'>
               <span className='sub-title'>Платёжные методы</span>
               <h2 className='title'>
-                Удобные и <span>Безопасные</span> Опции Оплаты
+                Принимаем рубли с <span>любых</span> российских карт
               </h2>
             </div>
           </div>

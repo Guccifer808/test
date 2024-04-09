@@ -9,12 +9,17 @@ const BannerTwo = () => {
         <div className='row justify-content-center'>
           <div className='col-lg-12'>
             <div className='banner-content text-center'>
-              <h2 className='title wow fadeInDown' data-wow-delay='.2s'>
-                Сервис по обмену валют в Таиланде
+              <h2 className='title wow fadeInDown' data-wow-delay='.8s'>
+                Fast Money Exchange <br />
               </h2>
-              {/* <img src={'/img/banner/banner_img.png'} alt='img' /> */}
+              <h3
+                className='banner-sub-title wow fadeInDown'
+                data-wow-delay='.8s'
+              >
+                простой и безопасный обмен рублей на наличный бат
+              </h3>
             </div>
-            <div className='banner-calc-wrap wow fadeInUp' data-wow-delay='.2s'>
+            <div className='banner-calc-wrap wow fadeInUp' data-wow-delay='.8s'>
               <Calculator />
             </div>
           </div>
@@ -28,7 +33,7 @@ const BannerTwo = () => {
               className='banner-social-link'
               target='_blank'
             >
-              <i className='fab fa-telegram'></i>
+              <i className='fab fa-telegram-plane'></i>
             </a>
           </li>
 

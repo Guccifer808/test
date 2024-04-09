@@ -5,20 +5,26 @@ const WhyChooseUsTwo = () => {
   const items = [
     {
       src: '/img/icon/atm.svg',
-      title: 'Через банкомат',
-      desc: 'Для этого не нужно иметь карты тайского или РФ банков',
+      title: 'Через ATM - банкомат',
+      desc: 'Снимайте наличные в любом месте с нашего тайского счета',
       url: '/',
     },
     {
       src: '/img/icon/delivery.svg',
       title: 'Доставка курьером',
-      desc: 'Курьер приезжает в течение 1 часа по указанному адресу',
+      desc: 'Курьер доставит баты в течение 1 часа с момента обращения ',
       url: '/',
     },
     {
       src: '/img/icon/transfer.svg',
       title: 'Перевод на счёт',
-      desc: 'Если у вас уже есть карта тайского банка или нужно произвести оплату за что-либо',
+      desc: 'Переведем безналичные баты на тайский счёт',
+      url: '/',
+    },
+    {
+      src: '/img/icon/transfer.svg',
+      title: 'У нас нет потолка',
+      desc: 'Мы не имеет верхней границы по суммам, меняйте любые объемы',
       url: '/',
     },
   ];
@@ -39,7 +45,7 @@ const WhyChooseUsTwo = () => {
 
         <div className='row '>
           {items.map((x, index) => (
-            <div key={index} className='col-lg-4 col-sm-6'>
+            <div key={index} className='col-lg-3 col-sm-6'>
               <WhyChooseUsTwoItem item={x} />
             </div>
           ))}

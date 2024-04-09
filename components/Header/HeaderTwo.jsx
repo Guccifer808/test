@@ -193,7 +193,7 @@ const HeaderTwo = () => {
                           className='btn'
                           target='_blank'
                         >
-                          Telegram <i className='fab fa-telegram'></i>
+                          Telegram <i className='fab fa-telegram-plane'></i>
                         </Link>
                       </li>
                     </ul>

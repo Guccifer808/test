@@ -43,17 +43,17 @@ const WhitePaper = () => {
               <div className='about-list align-items-center d-flex justify-content-center'>
                 <ul className='document-list row '>
                   <li>
-                    <i className='fas fa-check'></i>Поменять безналичные рубли
-                    или USDT на наличные/безналичные баты
+                    <i className='fas fa-check'></i>Обменять безналичные рубли и
+                    USDT на наличный и безналичный бат
                   </li>
                   <li>
-                    <i className='fas fa-check'></i>Оплатить инвойс, работаем с
-                    юр. лицами для оплаты товаров и услуг
+                    <i className='fas fa-check'></i>Оплатить invoice за услуги и
+                    товары, сделать бронирование и оплаты
                   </li>
                   <li>
                     {' '}
-                    <i className='fas fa-check'></i>Оплатить недвижимость в
-                    Таиланде
+                    <i className='fas fa-check'></i>Оплатить любую недвижимость
+                    в Таиланде
                   </li>
                 </ul>
               </div>
@@ -64,7 +64,7 @@ const WhitePaper = () => {
                   className='btn'
                   target='_blank'
                 >
-                  Telegram-Канал <i className='fab fa-telegram'></i>
+                  Telegram-Канал <i className='fab fa-telegram-plane'></i>
                 </Link>
               </div>
             </div>
