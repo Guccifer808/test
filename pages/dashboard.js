@@ -11,7 +11,7 @@ import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import { mainListItems, secondaryListItems } from '@/lib/listItems';
+import { mainListItems } from '@/lib/listItems';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { Button, Container } from '@mui/material';
@@ -162,7 +162,6 @@ export default function Dashboard() {
           <List component='nav'>
             {mainListItems}
             <Divider sx={{ my: 1 }} />
-            {secondaryListItems}
           </List>
         </Drawer>
         <Box
