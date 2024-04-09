@@ -1189,6 +1189,7 @@ label {
   background-size: 400% 400%;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  background-clip: text;
   animation: animateGradient 10s ease infinite;
 }
 
