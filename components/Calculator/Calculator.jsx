@@ -28,8 +28,8 @@ const Calculator = () => {
 
   const boxStyles = {
     background: '#fdfdfd',
-    marginTop: '10%',
-    marginBottom: '15%',
+    marginTop: '5%',
+    marginBottom: '10%',
     textAlign: 'center',
     color: '#222',
     minHeight: '20rem',
