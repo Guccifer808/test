@@ -16,7 +16,7 @@ const BannerTwo = () => {
                 className='banner-sub-title wow fadeInDown'
                 data-wow-delay='.8s'
               >
-                простой и безопасный обмен рублей на наличный бат
+                Простой и безопасный обмен рублей на наличный бат
               </h3>
             </div>
             <div className='banner-calc-wrap wow fadeInUp' data-wow-delay='.8s'>

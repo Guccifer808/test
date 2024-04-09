@@ -8,7 +8,7 @@ const About = () => {
     <section id='about' className='about-area-two'>
       <div className='container custom-container-four'>
         <div className='row align-items-center'>
-          <div className='col-lg-6'>
+          <div className='col-lg-6 d-none d-md-block'>
             <div
               className='about-img-two text-center wow fadeInLeft'
               data-wow-delay='.2s'
@@ -27,7 +27,21 @@ const About = () => {
             >
               <div className='section-title mb-30 text-center text-md-left'>
                 <span className='sub-title'>Репутация и гарантии</span>
-                <h2 className='title'>Репутация - то, чем мы дорожим</h2>
+                <h2 className='title'>
+                  Репутация - то, чем мы <span>дорожим</span>
+                </h2>
+              </div>
+              <div className='col-lg-6 d-md-none'>
+                <div
+                  className='about-img-two text-center wow fadeInLeft'
+                  data-wow-delay='.2s'
+                >
+                  <img
+                    src={'/img/images/mockup.png'}
+                    alt='FastMoney'
+                    loading='lazy'
+                  />
+                </div>
               </div>
               <p className='text-center'>
                 Мы имеем не только лицензию банка Таиланда, но и верификацию в
@@ -38,8 +52,8 @@ const About = () => {
                   <li>
                     <i className='fas fa-check'></i>
                     <span>
-                      Наш официальный telegram-канал имеет синюю галочку! Так вы
-                      можете отличить наш канал от каналов копий{' '}
+                      Наш официальный telegram-канал имеет синюю галочку! <br />
+                      Так вы можете отличить наш канал от каналов копий{' '}
                       <Image
                         src={verified}
                         alt='verified badge'
@@ -49,7 +63,7 @@ const About = () => {
                     </span>
                   </li>
                   <li>
-                    <i className='fas fa-check'></i>Сотни отзывов от клиентов
+                    <i className='fas fa-check'></i>Тысячи отзывов от клиентов
                   </li>
                   <li>
                     <i className='fas fa-check'></i>Актуальные данные по всем

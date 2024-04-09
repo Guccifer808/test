@@ -23,8 +23,8 @@ export default function HomeTwo() {
           <div className={cn('white-background')}>
             <BannerTwo />
 
-            <About />
             <WhyChooseUs />
+            <About />
             <WhyChooseUsTwo />
             <CounterArea />
           </div>

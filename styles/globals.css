@@ -40,7 +40,6 @@ html {
 }
 ::-webkit-scrollbar-thumb {
   cursor: grab !important;
-  /* background-color: rgb(0 0 0 / 50%); */
   background-color: #030b15;
   border-radius: 10px;
   border: 6px solid #030b15;
@@ -130,12 +129,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'CodeNext Trial', sans-serif;
+  font-family: 'CodeNext', sans-serif;
   color: #ffffff;
   margin-top: 0px;
   font-style: normal;
   font-weight: 600;
-  text-transform: capitalize;
 }
 h1 a,
 h2 a,
@@ -309,6 +307,13 @@ label {
   border-color: #25d366;
   color: #000;
   background-color: #fff;
+}
+.btn.btn-ig {
+  background: #d6249f;
+}
+.btn.btn-rounded {
+  border-radius: 100%;
+  padding: 20px;
 }
 .btn.btn-two {
   background: #564dca;

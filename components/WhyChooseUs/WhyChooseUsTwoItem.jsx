@@ -12,7 +12,9 @@ const WhyChooseUsTwoItem = (props) => {
       </div>
       <div className='choose-content align-items-center justify-content-center d-flex flex-column text-center'>
         <h2 className='title'>
-          <Link href={props.item.url}>{props.item.title}</Link>
+          {/* <Link href={props.item.url}> */}
+          {props.item.title}
+          {/* </Link> */}
         </h2>
         <p className='text-center '>{props.item.desc}</p>
       </div>

@@ -13,13 +13,13 @@ export default function PrivacyPolicy() {
       </Head>
       <HeaderLegal />
 
-      <main className='fix container custom-container-one'>
-        <div className='pt-160'>
+      <main className='fix container custom-container-one '>
+        <div className='mt-160'>
           <h4 className=''>
             Политика в отношении обработки персональных данных
           </h4>
         </div>
-        <p className='pb-160'>
+        <p className='mb-100'>
           <br /> <br />
           1. Общие положения <br />
           Настоящая политика обработки персональных данных составлена в

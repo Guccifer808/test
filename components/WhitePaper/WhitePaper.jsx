@@ -58,13 +58,31 @@ const WhitePaper = () => {
                 </ul>
               </div>
               {/* </div> */}
-              <div className='d-flex justify-content-center align-center '>
+              <h3 className='title text-center mb-4'>Связаться с нами:</h3>
+              <div className='d-flex justify-content-center  align-items-center gap-3 '>
                 <Link
                   href='https://t.me/fastmoneyphuket'
-                  className='btn'
+                  className='btn btn-tg btn-rounded'
                   target='_blank'
                 >
-                  Telegram-Канал <i className='fab fa-telegram-plane'></i>
+                  <i
+                    className='fab fa-telegram-plane'
+                    style={{ fontSize: 15 }}
+                  ></i>
+                </Link>
+                <Link
+                  href='https://wa.me/79520042864'
+                  className='btn btn-wa btn-rounded'
+                  target='_blank'
+                >
+                  <i className='fab fa-whatsapp' style={{ fontSize: 15 }}></i>
+                </Link>
+                <Link
+                  href='https://t.me/fastmoneyphuket'
+                  className='btn btn-ig btn-rounded'
+                  target='_blank'
+                >
+                  <i className='fab fa-instagram' style={{ fontSize: 15 }}></i>
                 </Link>
               </div>
             </div>

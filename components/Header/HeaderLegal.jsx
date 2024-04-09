@@ -72,7 +72,7 @@ const HeaderLegal = () => {
       <div
         id='sticky-header'
         className={cn(
-          'menu-area menu-style-two transparent-header',
+          'menu-area menu-style-two transparent-header area-bg',
           stickyClass.header
         )}
       >
@@ -112,7 +112,7 @@ const HeaderLegal = () => {
                           className='btn'
                           target='_blank'
                         >
-                          Telegram <i className='fab fa-telegram'></i>
+                          Telegram <i className='fab fa-telegram-plane'></i>
                         </Link>
                       </li>
                     </ul>

@@ -80,7 +80,7 @@ const Calculator = () => {
           fontFamily: 'Involve, sans-serif',
         }}
       >
-        высокая скорость обработки заявок и уверенность в каждой операции
+        Высокая скорость обработки заявок и уверенность в каждой операции
       </Typography>
       <Grid container spacing={2}>
         <InputAmout

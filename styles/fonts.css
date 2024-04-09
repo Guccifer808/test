@@ -1,7 +1,7 @@
 /* Fonts */
 @font-face {
-  font-family: 'CodeNext Trial';
-  src: url('/fonts/CodeNext-Trial-ExtraBold.woff') format('woff');
+  font-family: 'CodeNext';
+  src: url('/fonts/CodeNext-ExtraBold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
 }
