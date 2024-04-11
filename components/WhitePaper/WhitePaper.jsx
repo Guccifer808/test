@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const WhitePaper = () => {
   return (
-    <section className='document-area pt-60'>
+    <section className='document-area pt-60 pb-60'>
       <div className='container '>
         <div className='row justify-content-center'>
           <div className='col-lg-7 order-2 order-lg-0'>

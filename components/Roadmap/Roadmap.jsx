@@ -1,6 +1,5 @@
 import React from 'react';
 import RoadmapItem from './RoadmapItem';
-import { useHorizontalScroll } from '@/lib/hooks/useHorizontalScroll';
 
 const Roadmap = () => {
   const roadmap_items = [
@@ -42,9 +41,9 @@ const Roadmap = () => {
       info: 'Запустили свой первый offline пункт обмена на Пхукете',
     },
   ];
-  const scrollRef = useHorizontalScroll();
+  // const scrollRef = useHorizontalScroll();
   return (
-    <section id='roadmap' className='roadmap-area pt-130 pb-130 area-bg-top'>
+    <section id='roadmap' className='roadmap-area pt-130 pb-130 area-bg-top '>
       <div className='container custom-container-two'>
         <div className='row justify-content-center'>
           <div className='col-xl-5 col-lg-8'>
@@ -57,11 +56,11 @@ const Roadmap = () => {
           </div>
         </div>
 
-        <div className='row'>
+        <div className='row '>
           <div className='col-lg-12'>
             <div
-              className='bt-roadmap_x bt-roadmap-scrollbar'
-              ref={scrollRef}
+              className='bt-roadmap_x bt-roadmap-scrollbar '
+              // ref={scrollRef}
               style={{ overflow: 'auto' }}
             >
               <div className='bt-roadmap-wrap '>

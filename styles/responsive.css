@@ -1137,7 +1137,7 @@
 }
 /* Smaller devices (below 460px) */
 @media (max-width: 460px) {
-  .about-content-two .about-list ul li {
-    /* width: 90%; */
+  .faq-area {
+    padding: 60px 0px;
   }
 }

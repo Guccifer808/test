@@ -87,8 +87,9 @@ const HeaderTwo = () => {
         header: document.getElementById('header').offsetTop,
         about: document.getElementById('about').offsetTop,
         roadmap: document.getElementById('roadmap').offsetTop,
+        blog: document.getElementById('blog').offsetTop,
         faq: document.getElementById('faq').offsetTop,
-        // Add offsets for other sections as needed
+        // Add offsets for other sections if needed
       };
 
       let activeSection = '';
@@ -172,6 +173,15 @@ const HeaderTwo = () => {
                           onClick={() => handleClickScroll('roadmap')}
                         >
                           Roadmap
+                        </Link>
+                      </li>
+                      <li className={isActiveLink('#blog')}>
+                        <Link
+                          href='#blog'
+                          className='section-link'
+                          onClick={() => handleClickScroll('blog')}
+                        >
+                          Блог
                         </Link>
                       </li>
                       <li className={isActiveLink('#faq')}>

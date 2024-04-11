@@ -11,7 +11,7 @@ export default function Home() {
         <meta name='description' content='' />
       </Head>
 
-      <LayoutBlog pageTitle={'Blog & Article'} item={'Blog'}>
+      <LayoutBlog pageTitle={`FastMoney's Блог`} item={'Blog'}>
         <BlogList />
 
         <BlogPagination />
