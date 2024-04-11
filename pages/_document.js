@@ -23,7 +23,7 @@ export default function Document() {
         />
         <meta property='og:type' content='website' />
         <meta property='og:url' content='https:// website URL' />
-        <meta property='og:image' content='https:// /img/favicon.png' />
+        <meta property='og:image' content='/og_fastmoney.png' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
         <meta property='og:locale' content='en_US' />
@@ -39,7 +39,7 @@ export default function Document() {
           name='twitter:description'
           content='Надежный сервис обмена валюты без лишних хлопот и скрытых комиссий. Быстро, выгодно, безопасно'
         />
-        <meta name='twitter:image' content='Your website image URL' />
+        <meta name='twitter:image' content='/og_fastmoney.png' />
 
         {/* Favicon */}
         <link rel='icon' href='/img/favicon.png' />
