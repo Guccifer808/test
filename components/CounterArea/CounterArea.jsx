@@ -40,7 +40,7 @@ const CounterArea = () => {
   const amountPartners = useCounter(1, 7, 7, isVisible);
 
   return (
-    <section className='counter-area' ref={counterAreaRef}>
+    <section className='counter-area ' ref={counterAreaRef}>
       <div className='container custom-container-four'>
         <div className='counter-inner'>
           <div className='row justify-content-center'>

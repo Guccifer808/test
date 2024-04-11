@@ -8,6 +8,7 @@ import Image from 'next/image';
 let flag = true;
 
 const HeaderTwo = () => {
+  const [activeSection, setActiveSection] = useState('');
   // sticky nav bar
   const [stickyClass, setStickyClass] = useState({
     fixed: '',
@@ -102,8 +103,15 @@ const HeaderTwo = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call handleScroll once to set the initial active section
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleClick = (sectionId) => {
+    const sectionOffset = document.getElementById(sectionId).offsetTop;
+    window.scrollTo({ top: sectionOffset, behavior: 'smooth' });
+    setActiveSection(sectionId);
+  };
 
   useEffect(() => {
     setHash(asPath.split('#')[1]);
@@ -141,27 +149,28 @@ const HeaderTwo = () => {
                       />
                     </Link>
                   </div>
+
                   <div className='navbar-wrap main-menu d-none d-lg-flex'>
                     <ul className='navigation'>
                       <li
                         className={cn(
-                          (!hash || hash == 'header') && 'active',
-                          ' menu-item-has-children'
+                          isActiveLink('#header'),
+                          'menu-item-has-children'
                         )}
                       >
                         <Link
                           href='#header'
                           className='section-link'
-                          onClick={() => handleClickScroll('header')}
+                          onClick={() => handleClick('header')}
                         >
                           Калькулятор
                         </Link>
                       </li>
-                      <li className={cn(hash == 'about' && 'active')}>
+                      <li className={isActiveLink('#about')}>
                         <Link
                           href='#about'
                           className='section-link'
-                          onClick={() => handleClickScroll('about')}
+                          onClick={() => handleClick('about')}
                         >
                           О Нас
                         </Link>
@@ -170,7 +179,7 @@ const HeaderTwo = () => {
                         <Link
                           href='#roadmap'
                           className='section-link'
-                          onClick={() => handleClickScroll('roadmap')}
+                          onClick={() => handleClick('roadmap')}
                         >
                           Roadmap
                         </Link>
@@ -179,7 +188,7 @@ const HeaderTwo = () => {
                         <Link
                           href='#blog'
                           className='section-link'
-                          onClick={() => handleClickScroll('blog')}
+                          onClick={() => handleClick('blog')}
                         >
                           Блог
                         </Link>
@@ -188,13 +197,14 @@ const HeaderTwo = () => {
                         <Link
                           href='#faq'
                           className='section-link'
-                          onClick={() => handleClickScroll('faq')}
+                          onClick={() => handleClick('faq')}
                         >
                           Faq
                         </Link>
                       </li>
                     </ul>
                   </div>
+
                   <div className='header-action d-none d-md-block'>
                     <ul>
                       <li className='header-btn'>

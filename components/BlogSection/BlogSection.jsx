@@ -6,7 +6,7 @@ import Link from 'next/link';
 const BlogSection = () => {
   return (
     <section className='wrapper wow fadeInUp ' data-wow-delay='.8s' id='blog'>
-      <div className='container mt-60 mb-60 '>
+      <div className='container pt-120 pb-60'>
         <div className='section-title text-center mb-60'>
           <span className='sub-title '>Наш Блог</span>
           <h2 className='title '>

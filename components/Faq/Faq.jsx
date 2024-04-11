@@ -4,7 +4,7 @@ import { faqSectionData } from '@/lib/constants/faqSectionData';
 
 const Faq = () => {
   return (
-    <section id='faq' className='faq-area '>
+    <section id='faq' className='faq-area'>
       <div className='container custom-container-four'>
         <div className='faq-shape-wrap'>
           <img

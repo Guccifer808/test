@@ -2440,7 +2440,7 @@ label {
 /* 15. Faq */
 .faq-area {
   background: #f3f6fc;
-  padding: 60px 0 60px;
+  padding: 120px 0 60px;
   position: relative;
   z-index: 1;
 }

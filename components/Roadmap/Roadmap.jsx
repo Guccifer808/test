@@ -43,7 +43,7 @@ const Roadmap = () => {
   ];
   // const scrollRef = useHorizontalScroll();
   return (
-    <section id='roadmap' className='roadmap-area pt-130 pb-130 area-bg-top '>
+    <section id='roadmap' className='roadmap-area pt-120 pb-120 area-bg-top'>
       <div className='container custom-container-two'>
         <div className='row justify-content-center'>
           <div className='col-xl-5 col-lg-8'>

@@ -1138,6 +1138,6 @@
 /* Smaller devices (below 460px) */
 @media (max-width: 460px) {
   .faq-area {
-    padding: 60px 0px;
+    padding: 120px 0px;
   }
 }

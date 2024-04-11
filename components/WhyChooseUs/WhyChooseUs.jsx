@@ -120,7 +120,7 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section className='choose-area pb-50 pt-100'>
+    <section className='choose-area pt-60'>
       <div className='container'>
         <div className='row justify-content-center'>
           <div className='col-xl-6'>

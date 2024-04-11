@@ -30,11 +30,11 @@ const WhyChooseUsTwo = () => {
   ];
 
   return (
-    <section className='choose-area-two choose-bg pb-130'>
+    <section className='choose-area-two choose-bg pb-120'>
       <div className='container custom-container-four'>
         <div className='row justify-content-center'>
           <div className='col-lg-6'>
-            <div className='section-title text-center mb-70'>
+            <div className='section-title text-center mb-60'>
               <span className='sub-title text-white'>
                 Способы получения бат
               </span>
