@@ -20,7 +20,7 @@ const Faq = () => {
               <h2 className='title'>FAQ</h2>
             </div>
 
-            <div className='faq-wrap wow fadeInUp' data-wow-delay='.2s'>
+            <div className='faq-wrap wow fadeInUp' data-wow-delay='.5s'>
               <div className='accordion' id='accordionExample'>
                 {faqSectionData.map((x, index) => (
                   <FaqItem key={index} item={x} />

@@ -11,7 +11,7 @@ const About = () => {
           <div className='col-lg-6 d-none d-md-block'>
             <div
               className='about-img-two text-center wow fadeInLeft'
-              data-wow-delay='.2s'
+              data-wow-delay='.5s'
             >
               <img
                 src={'/img/images/mockup.png'}
@@ -23,7 +23,7 @@ const About = () => {
           <div className='col-lg-6'>
             <div
               className='about-content-two wow fadeInRight'
-              data-wow-delay='.2s'
+              data-wow-delay='.5s'
             >
               <div className='section-title mb-30 text-center text-md-left'>
                 <span className='sub-title'>Репутация и гарантии</span>

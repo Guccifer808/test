@@ -10,7 +10,7 @@ const BannerTwo = () => {
           <div className='col-lg-12'>
             <div className='banner-content text-center'>
               <h2 className='title wow fadeInDown' data-wow-delay='.8s'>
-                Fast Money Exchange <br />
+                FastMoney Exchange <br />
               </h2>
               <h3
                 className='banner-sub-title wow fadeInDown'

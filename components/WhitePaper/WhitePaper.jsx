@@ -8,8 +8,8 @@ const WhitePaper = () => {
         <div className='row justify-content-center'>
           <div className='col-lg-7 order-2 order-lg-0'>
             <div
-              className='document-img text-center wow fadeInUp'
-              data-wow-delay='.2s'
+              className='document-img text-center wow fadeInLeft'
+              data-wow-delay='.5s'
             >
               <img
                 src={'/img/images/mockup4.png'}
@@ -22,7 +22,7 @@ const WhitePaper = () => {
           <div className='col-lg-5 col-md-7 order-1 order-lg-2'>
             <div
               className='document-content mt-50 wow fadeInRight'
-              data-wow-delay='.2s'
+              data-wow-delay='.5s'
             >
               <div className='section-title mb-60 text-center'>
                 <span className='sub-title text-white'>Финансовые Решения</span>

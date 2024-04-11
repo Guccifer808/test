@@ -133,7 +133,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        <div className='row choose-active'>
+        <div className='row choose-active wow fadeInUp' data-wow-delay='.5s'>
           <SlickSlider settings={slickSettings}>
             {slider_items.map((item, index) => (
               <div key={index} className='col-lg-3'>

@@ -71,17 +71,8 @@
     font-size: 13px;
     padding: 19px 35px;
   }
-  .chart-content-inner .btn {
-    min-width: 160px;
-  }
-  .chart-wrap {
-    padding: 50px 35px 50px;
-  }
   .about-content {
     margin-left: 55px;
-  }
-  .chart-content {
-    width: 75%;
   }
   .custom-container-four {
     max-width: 1200px;
@@ -214,19 +205,6 @@
   .choose-item {
     padding: 50px 35px;
   }
-  .chart-content-inner .title {
-    font-size: 45px;
-    margin-bottom: 20px;
-  }
-  .chart-inner {
-    padding: 0 0;
-  }
-  .chart-content {
-    width: 80%;
-  }
-  .chart-wrap {
-    padding: 60px 30px 60px;
-  }
   .footer-top .row [class*='col-']:nth-child(4) .footer-widget {
     margin-left: 0;
   }
@@ -300,12 +278,7 @@
   .contact-inner {
     padding: 0 0;
   }
-  .newsletter-wrap {
-    padding: 50px 30px;
-  }
-  .newsletter-content .title {
-    font-size: 28px;
-  }
+
   .blog-sidebar {
     margin-left: 0;
   }
@@ -370,9 +343,6 @@
   }
   .ClassyCountdown-wrapper {
     column-gap: 70px;
-  }
-  .download-area.pt-150.pb-140 {
-    padding: 130px 0;
   }
   .footer-area-two .footer-top {
     padding: 70px 30px 65px;
@@ -447,24 +417,11 @@
   .partner-wrap ul li {
     width: 33.33%;
   }
-  .chart-content {
-    width: 100%;
-    margin-top: 50px;
-  }
-  .chart-content-inner p {
-    margin-bottom: 30px;
-  }
-  .chart-wrap {
-    padding: 60px 45px 60px;
-  }
   .document-content {
     margin-bottom: 50px;
     margin-top: 0;
   }
-  .team-content .title {
-    margin-bottom: 8px;
-    font-size: 19px;
-  }
+
   .contact-info-item::before {
     display: none;
   }
@@ -540,9 +497,6 @@
   .roadmap-wrap-two::before {
     display: none;
   }
-  .download-content {
-    margin-top: 50px;
-  }
   .faq-wrap .accordion-button {
     font-size: 22px;
     padding: 37px 100px 37px 30px;
@@ -559,20 +513,7 @@
   .contact-info-wrap-two {
     margin-bottom: 70px;
   }
-  .newsletter-wrap {
-    padding: 45px 30px;
-    display: block;
-  }
-  .newsletter-content {
-    width: 100%;
-    flex: 0 0 100%;
-    text-align: center;
-  }
-  .newsletter-form {
-    width: 100%;
-    flex: 0 0 100%;
-    margin-top: 20px;
-  }
+
   .footer-menu-two .navigation li {
     margin-right: 40px;
   }
@@ -695,12 +636,6 @@
   .roadmap-wrap-two:last-child {
     margin: 40px 0 0;
   }
-  .team-item.team-item-two {
-    margin-bottom: 45px;
-  }
-  .team-item.team-item-two .team-thumb {
-    margin-bottom: 20px;
-  }
   .footer-area-two .footer-top {
     padding: 55px 0 50px;
   }
@@ -751,22 +686,7 @@
   .partner-wrap ul li {
     width: 100%;
   }
-  .chart-content .nav-tabs .nav-item {
-    padding: 0 15px 10px;
-  }
-  .chart-content .nav-tabs {
-    margin: 0 -15px -10px;
-    margin-bottom: 35px;
-  }
-  .chart-content-inner .title {
-    font-size: 40px;
-  }
-  .chart-wrap {
-    padding: 40px 30px 40px;
-  }
-  .chart-wrap ul li {
-    width: 100%;
-  }
+
   .section-title .title br {
     display: none;
   }
@@ -851,25 +771,6 @@
     font-size: 22px;
     line-height: 1.2;
   }
-  .newsletter-content .title {
-    font-size: 24px;
-  }
-  .newsletter-wrap {
-    padding: 30px 25px;
-  }
-  .newsletter-form {
-    text-align: center;
-  }
-  .newsletter-form form button {
-    position: initial;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin-top: 20px;
-  }
-  .newsletter-form input {
-    padding: 26px 20px 26px 20px;
-  }
   .footer-menu-two .navigation li {
     margin-right: 20px;
   }
@@ -881,7 +782,7 @@
     justify-content: center;
   }
   .breadcrumb-content .title {
-    font-size: 38px;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   .blog-post-thumb img {
@@ -903,9 +804,7 @@
   .rc-post-thumb {
     margin-right: 15px;
   }
-  .footer-newsletter p {
-    margin-bottom: 40px;
-  }
+
   .blog-post-content .title br {
     display: none;
   }
@@ -1017,9 +916,6 @@
   .roadmap-wrap-two {
     grid-template-columns: repeat(1, 1fr);
   }
-  .download-area.pt-150.pb-140 {
-    padding: 120px 0;
-  }
   .faq-area {
     padding: 115px 0 120px;
   }
@@ -1076,12 +972,6 @@
   .choose-content .title br {
     display: none;
   }
-  .chart-wrap {
-    padding: 50px 40px 50px;
-  }
-  .chart-wrap ul li {
-    width: 50%;
-  }
   .contact-form-wrap {
     padding: 45px 35px;
   }
@@ -1124,11 +1014,9 @@
   .roadmap-wrap-two {
     grid-template-columns: repeat(2, 1fr);
   }
-  .newsletter-wrap {
-    padding: 30px 35px;
-  }
+
   .breadcrumb-content .title {
-    font-size: 48px;
+    font-size: 34px;
     margin-bottom: 25px;
   }
   .rc-post-content .title {

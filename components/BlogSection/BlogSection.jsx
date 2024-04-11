@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const BlogSection = () => {
   return (
-    <section className='wrapper wow fadeInUp ' data-wow-delay='.8s' id='blog'>
+    <section className='wrapper wow fadeInUp' data-wow-delay='.5s' id='blog'>
       <div className='container pt-120 pb-60'>
         <div className='section-title text-center mb-60'>
           <span className='sub-title '>Наш Блог</span>
@@ -19,11 +19,7 @@ const BlogSection = () => {
           ))}
         </div>
         <div className='d-flex justify-content-center mt-30 '>
-          <Link
-            // href='/blog'
-            href='/'
-            className='btn-blog'
-          >
+          <Link href='/blog' className='btn-blog'>
             Больше статей
           </Link>
         </div>

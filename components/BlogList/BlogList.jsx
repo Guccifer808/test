@@ -1,51 +1,26 @@
-import React from "react";
-import BlogListItem from "./BlogListItem";
+import React from 'react';
+import BlogCard from '../BlogCard/BlogCard';
+import { blogSectionData } from '@/lib/constants/blogSectionData';
+import Link from 'next/link';
 
 const BlogList = () => {
-  const blog_list = [
-    {
-      url: "/blog/blog-details",
-      src: "/img/blog/blog_img01.jpg",
-      author: "Alextina",
-      time: "Dec 28, 2022",
-      comments: "03",
-      title:
-        "New trends in UI/UX Design World of crypto Integration of this year",
-      summary:
-        "Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory",
-    },
-    {
-      url: "/blog/blog-details",
-      src: "/img/blog/blog_img02.jpg",
-      author: "Alextina",
-      time: "Dec 28, 2022",
-      comments: "03",
-      title: (
-        <>
-          That Time We Burned Down Players’ <br />
-          Houses in Ultima Online
-        </>
-      ),
-      summary:
-        "Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory",
-    },
-    {
-      url: "/blog/blog-details",
-      src: "/img/blog/blog_img03.jpg",
-      author: "Alextina",
-      time: "Dec 28, 2022",
-      comments: "03",
-      title: `Why Your Next ‘Yes’ Hire Might Come From Someone Who Just Said`,
-      summary:
-        "Laboratories used for scientific research take many forms because of the differing requirements of specialists in the various fields of science and engineering. A physics laboratory",
-    },
-  ];
-
   return (
     <>
-      {blog_list.map((blog, index) => (
-        <BlogListItem key={index} item={blog} />
-      ))}
+      <section className='wrapper container wow fadeInUp' data-wow-delay='.5s'>
+        <div className='container'>
+          {/* <div className='section-title text-center mb-60'>
+            <span className='sub-title '>Наш Блог</span>
+            <h2 className='title '>
+              <span>Полезный</span> заголовок секции
+            </h2>
+          </div> */}
+          <div className='row'>
+            {blogSectionData.map((post, index) => (
+              <BlogCard key={index} post={post} />
+            ))}
+          </div>
+        </div>
+      </section>
     </>
   );
 };

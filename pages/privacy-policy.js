@@ -3,6 +3,7 @@ import Head from 'next/head';
 import HeaderLegal from '@/components/Header/HeaderLegal';
 
 import FooterOne from '@/components/Footer/FooterOne';
+import BlogBreadcrumb from '@/components/BlogBreadcrumb/BlogBreadcrumb';
 
 export default function PrivacyPolicy() {
   return (
@@ -12,9 +13,9 @@ export default function PrivacyPolicy() {
         <meta name='description' content='' />
       </Head>
       <HeaderLegal />
-
+      <BlogBreadcrumb title={`Политика конфиденциальности`} />
       <main className='fix container custom-container-one '>
-        <div className='mt-160'>
+        <div className='mt-10 '>
           <h4 className=''>
             Политика в отношении обработки персональных данных
           </h4>

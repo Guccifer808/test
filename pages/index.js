@@ -10,6 +10,8 @@ import WhyChooseUsTwo from '@/components/WhyChooseUs/WhyChooseUsTwo';
 import WhitePaper from '@/components/WhitePaper/WhitePaper';
 import Roadmap from '@/components/Roadmap/Roadmap';
 import BlogSection from '@/components/BlogSection/BlogSection';
+import ContactOne from '@/components/Contact/ContactOne';
+import ContactTwo from '@/components/Contact/ContactTwo';
 
 export default function HomeTwo() {
   return (
@@ -23,7 +25,6 @@ export default function HomeTwo() {
         <main>
           <div className={cn('white-background')}>
             <BannerTwo />
-
             <WhyChooseUs />
             <About />
             <WhyChooseUsTwo />

@@ -4,7 +4,7 @@ const WhyChooseUsTwoItem = (props) => {
   return (
     <div
       className='choose-item-two wow fadeInUp align-items-center justify-content-center d-flex flex-column'
-      data-wow-delay='.8s'
+      data-wow-delay='.5s'
     >
       <div className='choose-icon-two'>
         <img src={props.item.src} alt={props.item.title} />

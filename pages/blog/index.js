@@ -14,7 +14,7 @@ export default function Home() {
       <LayoutBlog pageTitle={`FastMoney's Блог`} item={'Blog'}>
         <BlogList />
 
-        <BlogPagination />
+        {/* <BlogPagination /> */}
       </LayoutBlog>
     </>
   );

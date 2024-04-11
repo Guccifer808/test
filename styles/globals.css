@@ -13,20 +13,17 @@
 6. Countdown
 7. About
 8. Choose
-9. Chart
-10. Counter
-11. RoadMap
-12. Document
-13. Team
-14. Download
-15. Faq
-16. Blog
-17. Pagination
-18. Contact
-19. Newsletter
-20. Footer
-21. Preloader
-22. Blog Slider
+9. Counter
+10. RoadMap
+11. Document
+12. Faq
+13. Blog
+14. Pagination
+15. Contact
+16. Newsletter
+17. Footer
+18. Preloader
+19. Blog Slider
 
 */
 
@@ -47,7 +44,7 @@ html {
   background-clip: padding-box;
 }
 
-/* 1. Theme default css */
+/* Theme default css */
 body {
   font-family: 'Involve', sans-serif;
   font-weight: normal;
@@ -375,7 +372,7 @@ label {
   background: #a3a3a3;
 }
 
-/* 2. Header */
+/*  Header */
 .custom-container {
   max-width: 1630px;
 }
@@ -673,7 +670,7 @@ label {
   color: #564dca;
 }
 
-/* 3. Mobile-menu */
+/* Mobile-menu */
 .nav-outer .mobile-nav-toggler {
   position: relative;
   float: right;
@@ -915,53 +912,8 @@ label {
   margin-top: 3px;
 }
 
-/* 4. Banner */
-.banner-bg {
-  background-image: url(/img/banner/banner_bg.jpg);
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
-  padding: 120px 0 0;
-  overflow: hidden;
-}
-.banner-bg::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    0.23deg,
-    #030b15 5.68%,
-    rgba(3, 11, 21, 0.42) 81.9%
-  );
-  z-index: -1;
-}
-.banner-shape-wrap img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-.banner-shape-wrap img.img-one {
-  top: 28%;
-  left: -3%;
-  animation: leftToRight 5s infinite linear;
-}
-.banner-shape-wrap img.img-two {
-  left: auto;
-  right: 8%;
-  top: 20%;
-}
-.banner-shape-wrap img.img-three {
-  left: auto;
-  right: -2%;
-  top: auto;
-  bottom: 14%;
-  animation: alltuchtopdown 3s infinite linear;
-}
+/*  Banner */
+
 .banner-content img {
   margin-bottom: 25px;
 }
@@ -971,160 +923,7 @@ label {
   line-height: 1.4;
   letter-spacing: -0.01em;
 }
-.banner-content .title span {
-  color: #00c4f4;
-}
-.banner-progress-wrap ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: 0 50px;
-}
-.banner-progress-wrap ul li {
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #00c4f4;
-  display: inline-block;
-  position: relative;
-  padding-bottom: 25px;
-}
-.banner-progress-wrap ul li::before {
-  content: '';
-  position: absolute;
-  bottom: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  height: 14px;
-  background: #00c4f4;
-}
-.banner-progress-wrap ul li:nth-child(2) {
-  color: #ff9700;
-}
-.banner-progress-wrap ul li:nth-child(3) {
-  color: #12d176;
-}
-.banner-progress-wrap ul li:nth-child(2)::before {
-  background: #ff9700;
-}
-.banner-progress-wrap ul li:nth-child(3)::before {
-  background: #12d176;
-}
-.banner-progress-wrap {
-  margin: 0 150px 70px;
-}
-.banner-progress-wrap .progress {
-  height: 6px;
-  background-color: #f2f2f2;
-  border-radius: 0;
-  overflow: inherit;
-  margin-bottom: 25px;
-  margin-top: 8px;
-}
-.banner-progress-wrap .progress .progress-bar {
-  background-color: #00c4f4;
-  position: relative;
-  overflow: inherit;
-}
-.banner-progress-wrap .progress .progress-bar::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background: #fff;
-  z-index: 5;
-  border: 6px solid #00c4f4;
-}
-.banner-progress-wrap .title {
-  font-size: 15px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.banner-progress-wrap .title span {
-  margin-left: auto;
-}
-.banner-countdown-wrap .title {
-  font-size: 26px;
-  margin-bottom: 15px;
-  letter-spacing: -0.01em;
-}
-.banner-countdown-wrap .coming-time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.banner-countdown-wrap .coming-time .time-count {
-  min-width: 162px;
-  min-height: 96px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  position: relative;
-  margin: 20px 17.5px 0;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1;
-  background: #0b1d33;
-  border: 1px solid rgba(255, 255, 255, 0.04);
-  border-radius: 5px;
-  color: #a4b4c3;
-  text-transform: capitalize;
-}
-.banner-countdown-wrap .coming-time .time-count span {
-  font-size: 35px;
-  font-weight: 600;
-  color: #00c4f4;
-  margin-bottom: 12px;
-  display: block;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1px;
-}
-.banner-countdown-wrap .coming-time .time-count.hour span {
-  color: #ff9700;
-}
-.banner-countdown-wrap .coming-time .time-count.min span {
-  color: #ff1d45;
-}
-.banner-countdown-wrap .coming-time .time-count.sec span {
-  color: #12d176;
-}
-@keyframes alltuchtopdown {
-  0% {
-    transform: rotateX(0deg) translateY(0px);
-  }
-  50% {
-    transform: rotateX(0deg) translateY(-30px);
-  }
-  100% {
-    transform: rotateX(0deg) translateY(0px);
-  }
-}
-@keyframes leftToRight {
-  0% {
-    transform: rotateX(0deg) translateX(0px);
-  }
-  50% {
-    transform: rotateX(0deg) translateX(50px);
-  }
-  100% {
-    transform: rotateX(0deg) translateX(0px);
-  }
-}
 
-/* banner-two */
 .banner-area-two {
   position: relative;
   padding: 225px 0 0;
@@ -1172,7 +971,7 @@ label {
 }
 
 .banner-area-two .banner-content .title::after {
-  content: 'Fast Money Exchange';
+  content: 'FastMoney Exchange';
   position: absolute;
   top: 0;
   left: 0;
@@ -1184,8 +983,7 @@ label {
     #f1eeee,
     #564dca,
     #f1eeee,
-    /* #f1eeee,
-    #0e254e, */ #564dca
+    #564dca
   );
   background-size: 400% 400%;
   -webkit-text-fill-color: transparent;
@@ -1276,7 +1074,7 @@ label {
   opacity: 0.4;
 }
 
-/* 5. Breadcrumb */
+/*  Breadcrumb */
 .breadcrumb-bg {
   background-image: url(/img/bg/breadcrumb-bg.jpg);
   background-size: cover;
@@ -1301,7 +1099,7 @@ label {
   text-align: center;
 }
 .breadcrumb-content .title {
-  font-size: 65px;
+  font-size: 34px;
   margin-bottom: 30px;
   letter-spacing: -0.01em;
   line-height: 1.15;
@@ -1343,7 +1141,7 @@ label {
   padding-left: 15px;
 }
 
-/* 6. Countdown */
+/*  Countdown */
 .countdown-area-two .countdown-wrap {
   background: #ffffff;
   box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
@@ -1451,7 +1249,7 @@ label {
   border-color: #12d176;
 }
 
-/* 7. About */
+/*  About */
 .about-img {
   position: relative;
   padding-left: 120px;
@@ -1504,29 +1302,6 @@ label {
   margin-bottom: 40px;
   width: 73%;
   color: #a4b4c3;
-}
-.partner-wrap ul {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.partner-wrap ul li {
-  width: 20%;
-  height: 123px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -1px;
-  margin-top: -1px;
-  cursor: pointer;
-}
-.partner-wrap ul li img {
-  opacity: 0.5;
-  transition: 0.3s linear;
-}
-.partner-wrap ul li:hover img {
-  opacity: 1;
 }
 
 /* about-two */
@@ -1634,7 +1409,7 @@ label {
   }
 }
 
-/* 8. Choose */
+/*  Choose */
 .choose-area .row {
   margin: 0 -10px;
 }
@@ -1643,7 +1418,6 @@ label {
 }
 .choose-item {
   min-height: 100px;
-  /* background: #030b15; */
   border: 1px solid #564dca;
   border-radius: 15px;
   padding: 10px 10px;
@@ -1653,7 +1427,6 @@ label {
   justify-content: center;
 }
 .choose-item:hover {
-  /* border-color: transparent; */
   cursor: pointer;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
@@ -1663,11 +1436,8 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: rgba(255, 255, 255, 0.07); */
   background: white;
-  /* border: 1px solid rgba(255, 255, 255, 0.06); */
   border-radius: 10px;
-  /* margin-bottom: 30px; */
   transition: 0.3s ease-in-out;
 }
 .choose-icon img {
@@ -1716,7 +1486,6 @@ label {
   height: 2px;
   background-image: linear-gradient(to right, #564dca, #564dca);
   background-repeat: no-repeat;
-  /* background-size: 0 100%; */
   transition: background-size 0.4s ease-in-out;
 }
 
@@ -1750,126 +1519,7 @@ label {
   width: 100%;
 }
 
-/* 9. Chart */
-.chart-inner {
-  padding: 0 110px;
-}
-.chart-bg {
-  background-image: url(/img/bg/chart_bg.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 130px 0;
-}
-.chart-content .nav-tabs {
-  border-bottom: none;
-  margin: 0 -20px;
-  margin-bottom: 50px;
-}
-.chart-content .nav-tabs .nav-item {
-  padding: 0 20px;
-}
-.chart-content .nav-tabs .nav-link {
-  margin-bottom: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  text-transform: uppercase;
-  font-size: 15px;
-  color: #fff;
-  font-weight: 700;
-  padding: 0;
-  position: relative;
-}
-.chart-content .nav-tabs .nav-link::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 3px;
-  background: #00c4f4;
-  transition: 0.3s linear;
-  opacity: 0;
-}
-.chart-content .nav-tabs .nav-link.active::before {
-  opacity: 1;
-}
-.chart-content {
-  width: 72%;
-}
-.chart-content-inner .title {
-  font-size: 55px;
-  margin-bottom: 35px;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
-}
-.chart-content-inner p {
-  color: #a4b4c3;
-  margin-bottom: 45px;
-}
-.chart-content-inner .btn {
-  background: #00c4f4;
-  min-width: 200px;
-  padding: 21px 50px;
-}
-.chart-content-inner .btn:hover {
-  color: #fff;
-}
-.chart-content-inner .btn::after {
-  display: none;
-}
-.chart-wrap {
-  background: #0b1d33;
-  border-radius: 20px;
-  padding: 60px 45px 60px;
-  text-align: center;
-}
-.chart-wrap img {
-  margin-bottom: 75px;
-}
-.chart-wrap ul {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.chart-wrap ul li {
-  width: 50%;
-  text-align: left;
-  font-size: 14px;
-  color: #fff;
-  font-weight: 500;
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 8px;
-}
-.chart-wrap ul li::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #005f73;
-}
-.chart-wrap ul li:nth-child(2):before {
-  background: #f72585;
-}
-.chart-wrap ul li:nth-child(3):before {
-  background: #5dd400;
-}
-.chart-wrap ul li:nth-child(4):before {
-  background: #ff9700;
-}
-.chart-wrap ul li:nth-child(5):before {
-  background: #00c4f4;
-}
-.chart-wrap ul li:nth-child(6):before {
-  background: #007ff4;
-}
-
-/* 10. Counter */
+/*  Counter */
 .counter-inner {
   background: #ffffff;
   box-shadow: 0px 34px 35px rgba(160, 171, 191, 0.21);
@@ -1918,7 +1568,7 @@ label {
   line-height: 1.6;
 }
 
-/* 11. RoadMap */
+/*  RoadMap */
 .roadmap-area {
   position: relative;
   z-index: 1;
@@ -2225,7 +1875,7 @@ label {
   color: #00c4f4;
 }
 
-/* 12. Document */
+/*  Document */
 .area-bg {
   background-image: url(/img/bg/area_bg.png);
   background-size: cover;
@@ -2297,147 +1947,7 @@ label {
   color: #000;
 }
 
-/* 13. Team */
-.team-area {
-  position: relative;
-  z-index: 1;
-}
-.team-area::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(360deg, #0b1d33 0%, rgba(11, 29, 51, 0) 97.51%);
-  transform: matrix(1, 0, 0, -1, 0, 0);
-  z-index: -1;
-}
-.team-item {
-  text-align: center;
-  margin-bottom: 60px;
-}
-.team-item .team-thumb {
-  position: relative;
-  border-radius: 50%;
-  padding: 15px;
-  margin-bottom: 30px;
-  display: inline-block;
-}
-.team-item .team-thumb::before {
-  content: '';
-  left: 0;
-  top: 0;
-  width: 226px;
-  height: 226px;
-  background: transparent;
-  border: 2px dashed #00c4f4;
-  border-radius: 50%;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  animation: rotateme 0.4s linear infinite;
-  opacity: 0;
-}
-.team-item:hover .team-thumb::before {
-  opacity: 1;
-}
-.team-item .team-thumb img {
-  border-radius: 50%;
-  filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
-}
-.team-item:hover .team-thumb img {
-  filter: grayscale(0);
-}
-.team-content .title {
-  margin-bottom: 10px;
-  font-size: 22px;
-  font-weight: 500;
-  transition: 0.3s linear;
-}
-.team-content span {
-  display: block;
-  margin-bottom: 10px;
-}
-.team-content .team-social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 -10px;
-}
-.team-content .team-social li {
-  padding: 0 10px;
-}
-.team-content .team-social li a {
-  color: #fff;
-  font-size: 13px;
-}
-.team-content .team-social li a:hover {
-  color: #00c4f4;
-}
-
-/* team-two */
-.team-bg {
-  background-image: url(/img/bg/team_bg.jpg);
-  background-size: cover;
-  background-position: center;
-  padding: 130px 0 100px;
-  position: relative;
-}
-.team-bg::after,
-.team-bg::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  background-image: url(/img/bg/team_shape01.png);
-  background-position: center;
-  background-repeat: repeat;
-  width: 100%;
-  height: 29px;
-}
-.team-bg::after {
-  background-image: url(/img/bg/team_shape02.png);
-  top: auto;
-  bottom: 0;
-  height: 23px;
-}
-.team-item.team-item-two .team-thumb img {
-  border-radius: 0;
-  filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
-}
-.team-item.team-item-two:hover .team-thumb img {
-  filter: grayscale(0);
-}
-.team-item.team-item-two .team-thumb {
-  border-radius: 0;
-  padding: 0;
-  margin-bottom: 35px;
-}
-.team-item.team-item-two .team-thumb::before {
-  display: none;
-}
-.team-item.team-item-two {
-  margin-bottom: 30px;
-}
-
-/* 14. Download */
-.download-content p {
-  color: #727885;
-  margin-bottom: 30px;
-}
-.download-btn {
-  display: flex;
-  align-items: center;
-}
-.download-btn a {
-  margin-right: 20px;
-  margin-top: 10px;
-  display: block;
-}
-
-/* 15. Faq */
+/*  Faq */
 .faq-area {
   background: #f3f6fc;
   padding: 120px 0 60px;
@@ -2557,7 +2067,7 @@ label {
   bottom: 5%;
 }
 
-/* 16. Blog */
+/*  Blog */
 .blog-post-item {
   margin-bottom: 60px;
 }
@@ -2991,7 +2501,7 @@ label {
   background: #00c4f4;
 }
 
-/* 17. Pagination */
+/*  Pagination */
 .pagination-wrap ul {
   display: flex;
   align-items: center;
@@ -3024,7 +2534,7 @@ label {
   border-color: #564dca;
 }
 
-/* 18. Contact */
+/*  Contact */
 .contact-info-wrap {
   margin-bottom: 50px;
 }
@@ -3249,64 +2759,7 @@ label {
   background: #564dca;
 }
 
-/* 19. Newsletter */
-.newsletter-wrap {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  box-shadow: 0px 26px 23px rgba(81, 98, 132, 0.06);
-  border-radius: 10px;
-  padding: 64px 50px;
-  margin-top: -120px;
-  z-index: 1;
-  position: relative;
-}
-.newsletter-content {
-  width: 42.5%;
-  flex: 0 0 42.5%;
-}
-.newsletter-content .title {
-  color: #030b15;
-  font-size: 32px;
-  line-height: 1.5;
-  margin-bottom: 0;
-  letter-spacing: -1px;
-}
-.newsletter-form {
-  width: 57.5%;
-  flex: 0 0 57.5%;
-}
-.newsletter-form form {
-  position: relative;
-}
-.newsletter-form input {
-  width: 100%;
-  border: 1px solid #eceef3;
-  border-radius: 4px;
-  background: #f3f6fc;
-  font-size: 16px;
-  font-weight: 400;
-  color: #030b15;
-  padding: 26px 215px 26px 25px;
-  line-height: 1.25;
-  height: 72px;
-}
-.newsletter-form input::placeholder {
-  font-size: 16px;
-  font-weight: 400;
-  color: #667279;
-}
-.newsletter-form form button {
-  position: absolute;
-  right: 12px;
-  top: 8px;
-  bottom: 8px;
-}
-.newsletter-form .btn.btn-two {
-  padding: 21px 47px;
-}
-
-/* 20. Footer */
+/*  Footer */
 .footer-area {
   position: relative;
   z-index: 1;
@@ -3320,7 +2773,6 @@ label {
   width: 100%;
   height: 100%;
   background: linear-gradient(360deg, #564dca 15%, #000 99.9%);
-  /* background-color: #564dca; */
   z-index: -1;
 }
 .footer-scroll-wrap {
@@ -3381,7 +2833,6 @@ label {
 }
 .footer-content .footer-social {
   display: flex;
-  /* align-items: center; */
   margin: 0 -7px;
 }
 .footer-content .footer-social li {
@@ -3565,7 +3016,6 @@ label {
   background: transparent;
 }
 .bt-roadmap-scrollbar::-webkit-scrollbar-thumb {
-  /* background: rgba(255, 255, 255, 0.75); */
   background: #564dca;
 }
 .bt-roadmap-scrollbar::-webkit-scrollbar-thumb:hover {
@@ -3691,7 +3141,6 @@ label {
   letter-spacing: 0.5px;
   line-height: 1;
   margin-bottom: 0;
-  /* padding: 25px 42px; */
   padding: 15px 35px;
   text-align: center;
   text-transform: uppercase;

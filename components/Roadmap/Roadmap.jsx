@@ -56,14 +56,14 @@ const Roadmap = () => {
           </div>
         </div>
 
-        <div className='row '>
+        <div className='row wow fadeInUp' data-wow-delay='.5s'>
           <div className='col-lg-12'>
             <div
               className='bt-roadmap_x bt-roadmap-scrollbar '
               // ref={scrollRef}
               style={{ overflow: 'auto' }}
             >
-              <div className='bt-roadmap-wrap '>
+              <div className='bt-roadmap-wrap'>
                 {roadmap_items.map((x, index) => (
                   <RoadmapItem key={index} item={x} />
                 ))}
