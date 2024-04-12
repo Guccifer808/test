@@ -4,25 +4,29 @@ import WhyChooseUsTwoItem from './WhyChooseUsTwoItem';
 const WhyChooseUsTwo = () => {
   const items = [
     {
-      src: '/img/icon/atm.svg',
+      // src: '/img/icon/atm.svg',
+      src: '/img/icon/1.png',
       title: 'Через ATM - банкомат',
       desc: 'Снимайте наличные в любом месте с нашего тайского счета',
       url: '/',
     },
     {
-      src: '/img/icon/delivery.svg',
+      // src: '/img/icon/delivery.svg',
+      src: '/img/icon/2.png',
       title: 'Доставка курьером',
       desc: 'Курьер доставит баты в течение 1 часа с момента обращения ',
       url: '/',
     },
     {
-      src: '/img/icon/transfer.svg',
+      // src: '/img/icon/transfer.svg',
+      src: '/img/icon/3.png',
       title: 'Перевод на счёт',
       desc: 'Переведем безналичные баты на тайский счёт',
       url: '/',
     },
     {
-      src: '/img/icon/transfer.svg',
+      // src: '/img/icon/transfer.svg',
+      src: '/img/icon/4.png',
       title: 'У нас нет потолка',
       desc: 'Мы не имеет верхней границы по суммам, меняйте любые объемы',
       url: '/',

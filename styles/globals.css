@@ -1510,10 +1510,11 @@ label {
 }
 
 .choose-icon-two {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .choose-icon-two img {
-  height: 48px;
+  height: 128px;
+  width: 256px;
 }
 .choose-item-two .choose-content {
   width: 100%;
