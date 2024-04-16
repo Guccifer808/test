@@ -71,7 +71,7 @@ const Calculator = () => {
   };
 
   return (
-    <Container maxWidth='md' sx={boxStyles}>
+    <Container maxWidth='sm' sx={boxStyles}>
       <Typography
         variant='h5'
         sx={{
@@ -102,8 +102,7 @@ const Calculator = () => {
           thbData={thbCountryData}
         />
       </Grid>
-
-      <Box sx={{ textAlign: 'center', marginTop: '1rem', minHeight: '2rem' }}>
+      <Box sx={{ textAlign: 'left', marginTop: '1rem', minHeight: '2rem' }}>
         <Typography
           variant='h6'
           sx={{
@@ -118,7 +117,7 @@ const Calculator = () => {
         </Typography>
       </Box>
 
-      <div className='text-center text-md-left d-flex flex-column flex-md-row justify-content-center mt-4 gap-4 gap-md-5'>
+      <div className='text-center text-md-left d-flex flex-column flex-md-row justify-content-center mt-4 gap-4 gap-md-3'>
         <Link
           href='https://t.me/fastmoneyphuket'
           className='btn btn-tg'

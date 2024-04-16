@@ -5,18 +5,19 @@ const BannerTwo = () => {
   return (
     <section className='banner-area-two'>
       <div className='banner-bg-two'></div>
-      <div className='container custom-container-four'>
-        <div className='row justify-content-center'>
-          <div className='col-lg-12'>
-            <div className='banner-content text-center'>
-              <h2 className='title wow fadeInDown' data-wow-delay='.8s'>
+      <div className='container custom-container-two d-flex align-items-center justify-content-center'>
+        <div className='row justify-content-center '>
+          <div className='col-lg-12 d-sm-flex align-items-start '>
+            <div className='banner-content text-center m-1'>
+              <h2 className='title wow fadeInDown pt-4' data-wow-delay='.8s'>
                 FastMoney Exchange <br />
               </h2>
               <h3
                 className='banner-sub-title wow fadeInDown'
                 data-wow-delay='.8s'
               >
-                Простой и безопасный обмен рублей на наличный бат
+                Простой и безопасный обмен <br />
+                рублей на наличный бат
               </h3>
             </div>
             <div className='banner-calc-wrap wow fadeInUp' data-wow-delay='.8s'>

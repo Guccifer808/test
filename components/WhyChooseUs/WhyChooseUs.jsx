@@ -104,7 +104,7 @@ const WhyChooseUs = () => {
       description: '',
     },
     {
-      src: '/img/payments/mastercard.png',
+      src: '/img/payments/masterca+rd.png',
       alt: '',
       link: '/',
       title: '',

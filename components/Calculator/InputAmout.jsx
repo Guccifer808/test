@@ -21,6 +21,7 @@ const InputAmout = ({ amount, setAmount, currency }) => {
         label='Сумма'
         fullWidth
         InputProps={{
+          // style: { maxWidth: '155px' },
           type: 'number',
           startAdornment: (
             <InputAdornment position='start'>{currency.name}</InputAdornment>

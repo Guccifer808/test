@@ -25,7 +25,7 @@ const About = () => {
               className='about-content-two wow fadeInRight'
               data-wow-delay='.5s'
             >
-              <div className='section-title mb-30 text-center text-md-left'>
+              <div className='section-title mb-30 text-md-center'>
                 <span className='sub-title'>Репутация и гарантии</span>
                 <h2 className='title'>
                   Репутация - то, чем мы <span>дорожим</span>
@@ -33,7 +33,7 @@ const About = () => {
               </div>
               <div className='col-lg-6 d-md-none'>
                 <div
-                  className='about-img-two text-center wow fadeInLeft'
+                  className='about-img-two wow fadeInLeft'
                   data-wow-delay='.2s'
                 >
                   <img
@@ -43,11 +43,11 @@ const About = () => {
                   />
                 </div>
               </div>
-              <p className='text-center'>
+              <p className='text-left'>
                 Мы имеем не только лицензию банка Таиланда, но и верификацию в
                 telegram на нашем канале - синюю галочку справа от названия
               </p>
-              <div className='about-list align-items-center d-flex justify-content-center w-100'>
+              <div className='about-list align-items-center d-flex justify-content-start w-100'>
                 <ul>
                   <li>
                     <i className='fas fa-check'></i>

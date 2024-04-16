@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const WhitePaper = () => {
   return (
-    <section className='document-area '>
+    <section className='document-area pb-md-5 pb-0'>
       <div className='container '>
         <div className='row justify-content-center'>
           <div className='col-lg-7 order-2 order-lg-0'>
@@ -24,7 +24,7 @@ const WhitePaper = () => {
               className='document-content mt-50 wow fadeInRight'
               data-wow-delay='.5s'
             >
-              <div className='section-title mb-60 text-center'>
+              <div className='section-title mb-60'>
                 <span className='sub-title text-white'>Финансовые Решения</span>
                 <h2 className='title text-white '>
                   C нами вы <span> сможете</span>
@@ -43,17 +43,18 @@ const WhitePaper = () => {
               <div className='about-list align-items-center d-flex justify-content-center'>
                 <ul className='document-list row '>
                   <li>
-                    <i className='fas fa-check'></i>Обменять безналичные рубли и
-                    USDT на наличный и безналичный бат
+                    {' '}
+                    <i className='fas fa-check'></i>Оплатить любую недвижимость
+                    в Таиланде
                   </li>
+
                   <li>
                     <i className='fas fa-check'></i>Оплатить invoice за услуги и
                     товары, сделать бронирование и оплаты
                   </li>
                   <li>
-                    {' '}
-                    <i className='fas fa-check'></i>Оплатить любую недвижимость
-                    в Таиланде
+                    <i className='fas fa-check'></i>Обменять безналичные рубли и
+                    USDT на наличный и безналичный бат
                   </li>
                 </ul>
               </div>

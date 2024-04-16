@@ -2,7 +2,7 @@ import { Autocomplete, Grid, TextField } from '@mui/material';
 
 const SelectCountryTHB = ({ value, setValue, label, thbData }) => {
   return (
-    <Grid item xs={12} md={3}>
+    <Grid item xs={12} md>
       <Autocomplete
         disableClearable
         value={value}
@@ -11,7 +11,6 @@ const SelectCountryTHB = ({ value, setValue, label, thbData }) => {
         getOptionLabel={(option) => {
           return option.currency;
         }}
-       
         renderOption={(props, option) => (
           <li {...props}>
             <img

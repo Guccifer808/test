@@ -9,7 +9,7 @@ const SelectCountry = (props) => {
   console.warn = () => {};
 
   return (
-    <Grid item xs={12} md={3} sx={{ paddingBottom: '0.75rem' }}>
+    <Grid item xs={12} md sx={{ paddingBottom: '0.75rem' }}>
       <Autocomplete
         disableClearable
         value={value}
