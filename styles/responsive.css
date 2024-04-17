@@ -1028,6 +1028,9 @@
   .faq-area {
     padding: 120px 0px;
   }
+  .faq-wrap .accordion-item {
+    width: 100%;
+  }
 
   .about-content-two .section-title {
     text-align: center;
