@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const WhitePaper = () => {
   return (
@@ -11,10 +12,12 @@ const WhitePaper = () => {
               className='document-img text-center wow fadeInLeft'
               data-wow-delay='.5s'
             >
-              <img
-                src={'/img/images/mockup4.png'}
+              <Image
+                src={'/img/images/mockup_2.webp'}
                 alt='FastMoney mockup'
                 loading='lazy'
+                width={1000}
+                height={1000}
               />
             </div>
           </div>
@@ -34,10 +37,12 @@ const WhitePaper = () => {
                 className='document-img-mob text-center wow fadeInUp mb-5'
                 data-wow-delay='.2s'
               >
-                <img
-                  src={'/img/images/mockup4.png'}
+                <Image
+                  src={'/img/images/mockup_2.webp'}
                   alt='FastMoney mockup'
                   loading='lazy'
+                  width={1000}
+                  height={1000}
                 />
               </div>
               <div className='about-list align-items-center d-flex justify-content-center'>
@@ -60,30 +65,38 @@ const WhitePaper = () => {
               </div>
               {/* </div> */}
               <h3 className='title text-center mb-4'>Связаться с нами:</h3>
-              <div className='d-flex justify-content-center  align-items-center gap-3 '>
+              <div className='d-flex justify-content-center  align-items-center gap-3'>
                 <Link
                   href='https://t.me/fastmoneyphuket'
                   className='btn btn-tg btn-rounded'
                   target='_blank'
                 >
-                  <i
+                  {/* <i
                     className='fab fa-telegram-plane'
-                    style={{ fontSize: 15 }}
-                  ></i>
+                    style={{ fontSize: 20 }}
+                  ></i> */}
+
+                  <Image
+                    src={'/img/icon/telegram.svg'}
+                    width={20}
+                    height={20}
+                    alt='telegram icon'
+                    // id='social-icons'
+                  />
                 </Link>
                 <Link
                   href='https://wa.me/79520042864'
                   className='btn btn-wa btn-rounded'
                   target='_blank'
                 >
-                  <i className='fab fa-whatsapp' style={{ fontSize: 15 }}></i>
+                  <i className='fab fa-whatsapp' style={{ fontSize: 20 }}></i>
                 </Link>
                 <Link
                   href='https://t.me/fastmoneyphuket'
                   className='btn btn-ig btn-rounded'
                   target='_blank'
                 >
-                  <i className='fab fa-instagram' style={{ fontSize: 15 }}></i>
+                  <i className='fab fa-instagram' style={{ fontSize: 20 }}></i>
                 </Link>
               </div>
             </div>

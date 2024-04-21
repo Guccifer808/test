@@ -247,7 +247,8 @@ label {
   user-select: none;
   -moz-user-select: none;
   background: #040e18;
-  border-radius: 70px;
+  /* border-radius: 70px; */
+  border-radius: 7px;
   border: 2px solid transparent;
   color: #fff;
   cursor: pointer;
@@ -313,6 +314,10 @@ label {
 .btn.btn-rounded {
   border-radius: 100%;
   padding: 18px;
+}
+.btn.btn-rounded:hover {
+  color: #fff !important;
+  background-color: #564dca !important;
 }
 .btn.btn-two {
   background: #564dca;
@@ -1912,6 +1917,7 @@ label {
   color: #564dca;
   margin-right: 10px;
 }
+
 .document-img img {
   object-fit: contain;
   height: 575px;

@@ -42,12 +42,12 @@ const Faq = () => {
                     {showAll ? (
                       <div className='d-flex align-items-center gap-2'>
                         Свернуть
-                        <i class='fas fa-angle-up '></i>
+                        <i className='fas fa-angle-up '></i>
                       </div>
                     ) : (
                       <div className='d-flex align-items-center gap-2'>
                         Показать все
-                        <i class='fas fa-angle-down '></i>
+                        <i className='fas fa-angle-down '></i>
                       </div>
                     )}
                   </button>

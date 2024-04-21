@@ -147,10 +147,10 @@
     max-width: 700px;
   }
   .banner-bg-two {
-    height: calc(100% - 115px);
+    height: 100%;
   }
   .banner-bg-two::before {
-    height: 600px;
+    height: 575px;
   }
   .comment-form .btn,
   .blog-post-item .btn.btn-two {
@@ -329,10 +329,10 @@
     padding-left: 20px;
   }
   .banner-bg-two::before {
-    height: 480px;
+    height: 500px;
   }
   .banner-bg-two {
-    height: calc(100% - 100px);
+    height: 100%;
   }
   .banner-area-two .banner-content img {
     max-width: 600px;
@@ -598,7 +598,7 @@
     height: calc(100% - 120px);
   }
   .banner-bg-two::before {
-    height: 400px;
+    height: 500px;
   }
   .ClassyCountdown-wrapper {
     column-gap: 30px;

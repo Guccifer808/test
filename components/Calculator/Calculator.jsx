@@ -117,7 +117,7 @@ const Calculator = () => {
         </Typography>
       </Box>
 
-      <div className='text-center text-md-left d-flex flex-column flex-md-row justify-content-center mt-4 gap-4 gap-md-3'>
+      <div className='text-center text-md-left d-flex flex-column flex-md-row justify-content-between mt-4 gap-4 gap-md-4'>
         <Link
           href='https://t.me/fastmoneyphuket'
           className='btn btn-tg'
