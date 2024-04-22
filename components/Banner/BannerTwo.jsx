@@ -7,7 +7,7 @@ const BannerTwo = () => {
       <div className='banner-bg-two'></div>
       <div className='container custom-container-two d-flex align-items-center justify-content-center'>
         <div className='row justify-content-center '>
-          <div className='col-lg-12 d-sm-flex align-md-items-start justify-items-center gap-3 gap-xxl-5'>
+          <div className='col-lg-12 d-sm-flex align-md-items-start flex-lg-row flex-sm-column justify-items-center gap-3 gap-xxl-5'>
             <div className='banner-content '>
               <h2 className='title wow fadeInDown pt-4' data-wow-delay='.8s'>
                 FastMoney Exchange

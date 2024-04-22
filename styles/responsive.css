@@ -918,6 +918,9 @@
     max-width: 280px;
     margin: 0 auto 60px;
   }
+  .choose-area {
+    padding-top: 60px;
+  }
   .roadmap-wrap-two {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -958,6 +961,15 @@
   }
   .bd-approach-wrap {
     margin: 40px 0 35px;
+  }
+  .banner-area-two .banner-content .title {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+  .banner-area-two .banner-content .banner-sub-title {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -1009,10 +1021,10 @@
   }
   .banner-area-two .banner-content .title {
     font-size: 40px;
-    text-align: left;
+    text-align: center;
   }
   .banner-area-two .banner-content .banner-sub-title {
-    text-align: left;
+    text-align: center;
     width: 100%;
   }
   .section-title.section-title-two .title {
@@ -1062,12 +1074,16 @@
     text-align: center;
   }
   .banner-area-two .banner-content .title {
-    font-size: 36px;
+    font-size: 34px;
     text-align: center;
     width: 100%;
   }
   .banner-area-two .banner-content .banner-sub-title {
     text-align: center;
     width: 100%;
+    font-size: 1.1em;
+  }
+  .choose-area {
+    padding-top: 60px;
   }
 }
