@@ -25,10 +25,12 @@ const About = () => {
               className='about-content-two wow fadeInRight'
               data-wow-delay='.5s'
             >
-              <div className='section-title mb-30 text-md-center'>
-                <span className='sub-title'>Репутация и гарантии</span>
+              <div className='section-title mb-30 text-md-left '>
+                <span className='sub-title'>
+                  Репутация - то, чем мы дорожим
+                </span>
                 <h2 className='title'>
-                  Репутация - то, чем мы <span>дорожим</span>
+                  Репутация и <span> гарантии</span>
                 </h2>
               </div>
               <div className='col-lg-6 d-md-none'>

@@ -23,7 +23,10 @@ const BannerTwo = () => {
                 рублей на наличный бат
               </h3>
             </div>
-            <div className='banner-calc-wrap wow fadeInUp' data-wow-delay='.8s'>
+            <div
+              className='banner-calc-wrap wow fadeInDown'
+              data-wow-delay='.8s'
+            >
               <Calculator />
             </div>
           </div>

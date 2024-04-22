@@ -39,11 +39,9 @@ const WhyChooseUsTwo = () => {
         <div className='row justify-content-center'>
           <div className='col-lg-6'>
             <div className='section-title text-center mb-60'>
-              <span className='sub-title text-white'>
-                Способы получения бат
-              </span>
+              <span className='sub-title text-white'>Почему выбирают нас</span>
               <h2 className='title text-white'>
-                Почему <span>выбирают</span> нас
+                Способы получения<span> бат </span>
               </h2>
             </div>
           </div>

@@ -48,9 +48,9 @@ const Roadmap = () => {
         <div className='row justify-content-center'>
           <div className='col-xl-5 col-lg-8'>
             <div className='section-title text-center mb-60'>
-              <span className='sub-title text-white'>FastMoney's Roadmap</span>
+              <span className='sub-title text-white'>Наш путь развития</span>
               <h2 className='title text-white'>
-                Наш путь <span>развития</span>
+                FastMoney's<span> roadmap</span>
               </h2>
             </div>
           </div>

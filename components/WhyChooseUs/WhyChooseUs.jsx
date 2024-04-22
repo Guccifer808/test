@@ -104,7 +104,7 @@ const WhyChooseUs = () => {
       description: '',
     },
     {
-      src: '/img/payments/masterca+rd.png',
+      src: '/img/payments/mastercard.png',
       alt: '',
       link: '/',
       title: '',
@@ -125,9 +125,11 @@ const WhyChooseUs = () => {
         <div className='row justify-content-center'>
           <div className='col-xl-6'>
             <div className='section-title text-center mb-50'>
-              <span className='sub-title'>Платёжные методы</span>
+              <span className='sub-title'>
+                Принимаем рубли слюбых российских карт
+              </span>
               <h2 className='title'>
-                Принимаем рубли с <span>любых</span> российских карт
+                Платёжные<span> методы</span>
               </h2>
             </div>
           </div>

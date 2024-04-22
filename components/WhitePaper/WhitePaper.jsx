@@ -28,9 +28,9 @@ const WhitePaper = () => {
               data-wow-delay='.5s'
             >
               <div className='section-title mb-60'>
-                <span className='sub-title text-white'>Финансовые Решения</span>
+                <span className='sub-title text-white '>C нами вы сможете</span>
                 <h2 className='title text-white '>
-                  C нами вы <span> сможете</span>
+                  Финансовые<span> решения</span>
                 </h2>
               </div>
               <div
@@ -45,6 +45,7 @@ const WhitePaper = () => {
                   height={1000}
                 />
               </div>
+
               <div className='about-list align-items-center d-flex justify-content-center'>
                 <ul className='document-list row '>
                   <li>

@@ -8,9 +8,9 @@ const BlogSection = () => {
     <section className='wrapper wow fadeInUp' data-wow-delay='.5s' id='blog'>
       <div className='container pt-120 pb-60'>
         <div className='section-title text-center mb-60'>
-          <span className='sub-title '>Наш Блог</span>
+          <span className='sub-title '>Полезная информация и статьи</span>
           <h2 className='title '>
-            <span>Полезный</span> заголовок секции
+            FastMoney's<span> блог</span>
           </h2>
         </div>
         <div className='row'>
