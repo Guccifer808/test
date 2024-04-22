@@ -78,6 +78,10 @@ const Calculator = () => {
           marginBottom: '2rem',
           color: 'black',
           fontFamily: 'Involve, sans-serif',
+          // textAlign: 'left',
+          // '@media (max-width: 768px)': {
+          //   textAlign: 'center',
+          // },
         }}
       >
         Высокая скорость обработки заявок и уверенность в каждой операции

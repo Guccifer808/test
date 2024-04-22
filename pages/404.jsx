@@ -1,8 +1,13 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 const NotFoundPage = () => {
   return (
     <>
+      <Head>
+        <title>FastMoney | Страница не найдена</title>
+        <meta name='description' content='Page not found' />
+      </Head>
       <div className='wrap'>
         <svg
           id='svgWrap_2'
@@ -53,7 +58,7 @@ const NotFoundPage = () => {
         <defs>
           <filter id='glow'>
             <fegaussianblur
-              class='blur'
+              className='blur'
               result='coloredBlur'
               stddeviation='4'
             ></fegaussianblur>

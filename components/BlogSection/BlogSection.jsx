@@ -19,7 +19,7 @@ const BlogSection = () => {
           ))}
         </div>
         <div className='d-flex justify-content-center mt-30 '>
-          <Link href='/blog' className='btn-blog'>
+          <Link href='/blog' className='btn'>
             Больше статей
           </Link>
         </div>
