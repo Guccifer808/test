@@ -151,10 +151,10 @@
     max-width: 700px;
   }
   .banner-bg-two {
-    height: 100%;
+    height: 110%;
   }
   .banner-bg-two::before {
-    height: 575px;
+    height: 1020px;
   }
   .comment-form .btn,
   .blog-post-item .btn.btn-two {
@@ -1009,6 +1009,11 @@
   }
   .banner-area-two .banner-content .title {
     font-size: 40px;
+    text-align: left;
+  }
+  .banner-area-two .banner-content .banner-sub-title {
+    text-align: left;
+    width: 100%;
   }
   .section-title.section-title-two .title {
     font-size: 36px;
@@ -1055,5 +1060,14 @@
   }
   .about-content-two .section-title {
     text-align: center;
+  }
+  .banner-area-two .banner-content .title {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+  .banner-area-two .banner-content .banner-sub-title {
+    text-align: center;
+    width: 100%;
   }
 }

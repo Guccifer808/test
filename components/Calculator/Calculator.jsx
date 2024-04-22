@@ -34,7 +34,7 @@ const Calculator = () => {
     color: '#222',
     minHeight: '20rem',
     borderRadius: 2,
-    padding: '4rem 2rem',
+    padding: '3.5rem 2rem',
     boxShadow: '0px 10px 15px -3px rgba(0,0,0,0.1)',
     position: 'relative',
     '& .MuiFormLabel-root': {
@@ -72,20 +72,6 @@ const Calculator = () => {
 
   return (
     <Container maxWidth='sm' sx={boxStyles}>
-      <Typography
-        variant='h5'
-        sx={{
-          marginBottom: '2rem',
-          color: 'black',
-          fontFamily: 'Involve, sans-serif',
-          // textAlign: 'left',
-          // '@media (max-width: 768px)': {
-          //   textAlign: 'center',
-          // },
-        }}
-      >
-        Высокая скорость обработки заявок и уверенность в каждой операции
-      </Typography>
       <Grid container spacing={2}>
         <InputAmout
           amount={amount}
@@ -114,14 +100,26 @@ const Calculator = () => {
             fontWeight: 'bold',
             color: 'black',
             fontFamily: 'Involve, sans-serif',
+            display: 'flex',
+            flexDirection: 'row',
+            flexWrap: 'wrap',
           }}
         >
-          {amount} {fromCurrency.currency} ={' '}
-          {convertedAmount ? convertedAmount : '0.00'} {toCurrency.currency}
+          <span style={{ marginBottom: '5px' }}>Итого:&nbsp;</span>
+          <span>
+            {amount} {fromCurrency.currency} ={' '}
+            {convertedAmount ? convertedAmount : '0.00'} {toCurrency.currency}
+          </span>
         </Typography>
+
+        <div className='calc-title mt-3'>
+          <span className='calc-subtitle'>
+            Высокая скорость обработки заявок и уверенность в каждой операции
+          </span>
+        </div>
       </Box>
 
-      <div className='text-center text-md-left d-flex flex-column flex-md-row justify-content-between mt-4 gap-4 gap-md-4'>
+      <div className='text-center text-md-left d-flex flex-column flex-md-row justify-content-between mt-3 gap-4 gap-md-4'>
         <Link
           href='https://t.me/fastmoneyphuket'
           className='btn btn-tg'
