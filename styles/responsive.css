@@ -1027,9 +1027,19 @@
   .rc-post-content .title {
     font-size: 16px;
   }
+
+  .about-content-two .section-title {
+    text-align: center;
+  }
+  .document-content .section-title {
+    text-align: center;
+  }
+  .about-content-two .section-title {
+    text-align: center;
+  }
 }
 /* Smaller devices (below 460px) */
-@media (max-width: 460px) {
+@media (max-width: 480px) {
   .faq-area {
     padding: 120px 0px;
   }

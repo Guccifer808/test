@@ -125,9 +125,7 @@ const WhyChooseUs = () => {
         <div className='row justify-content-center'>
           <div className='col-xl-6'>
             <div className='section-title text-center mb-50'>
-              <span className='sub-title'>
-                Принимаем рубли слюбых российских карт
-              </span>
+              <span className='sub-title'>Любые российские карты</span>
               <h2 className='title'>
                 Платёжные<span> методы</span>
               </h2>
