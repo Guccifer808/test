@@ -975,8 +975,6 @@ label {
   margin-right: 20px;
   line-height: 1.36;
   text-transform: none;
-  /* position: relative; */
-  /* display: inline-block; */
   text-align: left;
 }
 
@@ -984,7 +982,7 @@ label {
   font-family: 'Involve', sans-serif;
   font-weight: normal;
   text-align: left;
-  width: 75%;
+  width: 70%;
 }
 
 .banner-social-wrap {
