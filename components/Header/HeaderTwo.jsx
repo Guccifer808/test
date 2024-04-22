@@ -245,7 +245,7 @@ const HeaderTwo = () => {
                     <ul className='clearfix'>
                       <li>
                         <Link href='https://t.me/fm_advisor'>
-                          <i className='fab fa-telegram'></i>
+                          <i className='fab fa-telegram-plane'></i>
                         </Link>
                       </li>
                       <li>
