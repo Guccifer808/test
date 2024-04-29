@@ -8,13 +8,13 @@ const About = () => {
     <section id='about' className='about-area-two'>
       <div className='container custom-container-four'>
         <div className='row align-items-center'>
-          <div className='col-lg-6 d-none d-md-block'>
+          <div className='col-lg-6 d-none d-md-block '>
             <div
-              className='about-img-two text-center wow fadeInLeft'
+              className='about-img-two text-center wow fadeInLeft '
               data-wow-delay='.5s'
             >
               <img
-                src={'/img/images/mockup.png'}
+                src={'/img/images/mockup_final.webp'}
                 alt='FastMoney'
                 loading='lazy'
               />
@@ -33,11 +33,11 @@ const About = () => {
               </div>
               <div className='col-lg-6 d-md-none'>
                 <div
-                  className='about-img-two wow fadeInLeft'
+                  className='about-img-two wow fadeInLeft mb-15'
                   data-wow-delay='.2s'
                 >
                   <img
-                    src={'/img/images/mockup.png'}
+                    src={'/img/images/mockup_final.webp'}
                     alt='FastMoney'
                     loading='lazy'
                   />
