@@ -987,9 +987,10 @@ label {
 }
 
 .banner-social-wrap {
-  position: absolute;
+  position: fixed;
   left: 50px;
-  bottom: 125px;
+  bottom: 10%;
+  z-index: 999 !important;
 }
 .banner-social-wrap li:hover {
   background-color: #564dca;
@@ -998,6 +999,7 @@ label {
   color: #fff;
 }
 .banner-social-wrap ul li {
+  background-color: #fff;
   margin-bottom: 25px;
   border: 1px solid #564dca;
   border-radius: 50px;
@@ -1578,7 +1580,7 @@ label {
 /*  RoadMap */
 .roadmap-area {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   overflow: hidden;
 }
 
@@ -1961,7 +1963,6 @@ label {
   background: #f3f6fc;
   padding: 120px 0 60px;
   position: relative;
-  z-index: 1;
 }
 
 .faq-area::before {
@@ -2772,7 +2773,6 @@ label {
 /*  Footer */
 .footer-area {
   position: relative;
-  z-index: 1;
   padding-top: 60px;
 }
 .footer-area::before {

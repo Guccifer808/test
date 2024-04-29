@@ -30,7 +30,7 @@ const SelectCountry = (props) => {
               alt=''
               style={{ width: 24, marginRight: 8 }}
             />
-            {option.currency} - {option.name}
+            {option.name}
           </li>
         )}
         renderInput={(params) => <TextField {...params} label={label} />}

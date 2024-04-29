@@ -24,7 +24,7 @@ const InputAmout = ({ amount, setAmount, currency }) => {
           // style: { maxWidth: '155px' },
           type: 'number',
           startAdornment: (
-            <InputAdornment position='start'>{currency.name}</InputAdornment>
+            <InputAdornment position='start'>{currency.symbol}</InputAdornment>
           ),
         }}
         // Add error handling for negative amounts

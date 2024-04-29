@@ -2,29 +2,17 @@ import { Box, Container, Grid, Typography } from '@mui/material';
 import { useEffect, useState } from 'react';
 import InputAmout from './InputAmout';
 import SelectCountry from './SelectCountry';
-import SwitchCurrency from './SwitchCurrency';
 import { database } from '@/firebase/firebase';
-import SelectCountryTHB from './SelectCountryTHB';
 import Link from 'next/link';
-import {
-  countryData,
-  flagTH,
-  thbCountryData,
-} from '@/lib/constants/currenciesData';
+import { countryData } from '@/lib/constants/currenciesData';
 import useCurrencyRates from '@/lib/hooks/useCurrencyRates';
 
 const Calculator = () => {
+  const defaultCurrency = countryData.find((item) => item.currency === 'RUB'); // Default currency
+  const { currencyRates, mapCurrencyToRate } = useCurrencyRates(); // Hook for mapping currency codes to rates and fetching the rates
   const [amount, setAmount] = useState('');
   const [convertedAmount, setConvertedAmount] = useState(null);
-  const defaultFromCurrency = countryData[2]; // Default currency
-  const { currencyRates, mapCurrencyToRate } = useCurrencyRates(); // Hook for mapping currency codes to rates and fetching the rates
-
-  const [fromCurrency, setFromCurrency] = useState(defaultFromCurrency);
-  const [toCurrency, setToCurrency] = useState({
-    name: '฿',
-    flag: flagTH,
-    currency: 'THB',
-  });
+  const [currency, setCurrency] = useState(defaultCurrency);
 
   const boxStyles = {
     background: '#fdfdfd',
@@ -53,44 +41,40 @@ const Calculator = () => {
   useEffect(() => {
     if (Object.keys(currencyRates).length > 0) {
       if (amount) {
-        const fromRate = mapCurrencyToRate(fromCurrency.currency);
+        const fromRate = mapCurrencyToRate(currency.currency);
         const converted = parseFloat(amount) * fromRate;
         setConvertedAmount(converted.toFixed(2));
       } else {
         setConvertedAmount(null);
       }
     }
-  }, [amount, fromCurrency, currencyRates]);
+  }, [amount, currency, currencyRates]);
 
   const handleWhatsAppClick = () => {
-    const message = `Здравствуйте!\nХочу обменять ${amount} ${fromCurrency.currency}\nИз: ${fromCurrency.currency}\nВ: ${toCurrency.currency}\nСумма в THB: ${convertedAmount} ${toCurrency.currency}`;
+    const message = `Здравствуйте!\nХочу обменять ${amount} ${currency.currency}
+    \nИз: ${currency.currency}\nВ: ${currency.to}\nСумма в ${currency.to}: ${convertedAmount}`;
     const whatsappUrl = `https://wa.me/79520042864?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, '_blank');
   };
-
   return (
     <Container maxWidth='sm' sx={boxStyles}>
       <Grid container spacing={2}>
-        <InputAmout
-          amount={amount}
-          setAmount={setAmount}
-          currency={fromCurrency}
-        />
+        <InputAmout amount={amount} setAmount={setAmount} currency={currency} />
         <SelectCountry
-          value={fromCurrency}
-          setValue={setFromCurrency}
-          label='Из'
+          value={currency}
+          setValue={setCurrency}
+          label='Валюта'
           countryData={countryData}
         />
-        <SwitchCurrency />
-        <SelectCountryTHB
+        {/* <SwitchCurrency /> */}
+        {/* <SelectCountryTHB
           value={toCurrency}
           setValue={setToCurrency}
           label='В'
           thbData={thbCountryData}
-        />
+        /> */}
       </Grid>
       <Box sx={{ textAlign: 'left', marginTop: '1rem', minHeight: '2rem' }}>
         <Typography
@@ -107,8 +91,8 @@ const Calculator = () => {
         >
           <span style={{ marginBottom: '5px' }}>Итого:&nbsp;</span>
           <span>
-            {amount} {fromCurrency.currency} ={' '}
-            {convertedAmount ? convertedAmount : '0.00'} {toCurrency.currency}
+            {amount} {currency.currency} ={' '}
+            {convertedAmount ? convertedAmount : '0.00'} {currency.to}
           </span>
         </Typography>
 

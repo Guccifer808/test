@@ -132,6 +132,7 @@ const UpdateCurrencyRatesForm = () => {
               <MenuItem value='EUR'>EUR</MenuItem>
               <MenuItem value='USD'>USD</MenuItem>
               <MenuItem value='RUB'>RUB</MenuItem>
+              <MenuItem value='THB'>THB</MenuItem>
               {/* Add other currencies as needed */}
             </Select>
           </FormControl>
@@ -161,7 +162,7 @@ const UpdateCurrencyRatesForm = () => {
               sx={{
                 backgroundColor: '#564dca',
                 border: '1px solid #564dca',
-                borderRadius: '70px',
+                borderRadius: '5px',
                 '&:hover': {
                   backgroundColor: 'white',
                   color: 'black',

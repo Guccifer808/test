@@ -131,7 +131,7 @@ export default function Dashboard() {
               sx={{
                 backgroundColor: '#564dca',
                 border: '1px solid #564dca',
-                borderRadius: '70px',
+                borderRadius: '5px',
                 '&:hover': {
                   backgroundColor: 'white',
                   color: 'black',

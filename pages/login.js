@@ -153,7 +153,7 @@ export default function SignIn() {
                         bgcolor: '#564dca',
                         backgroundColor: '#564dca',
                         border: '1px solid #564dca',
-                        borderRadius: '70px',
+                        borderRadius: '5px',
                         '&:hover': {
                           backgroundColor: 'white',
                           color: 'black',
