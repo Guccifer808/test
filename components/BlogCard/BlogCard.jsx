@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const BlogCard = ({ post }) => {
@@ -19,7 +20,9 @@ const BlogCard = ({ post }) => {
             </small>
           </div>
           <div className='card-footer text-center'>
-            <button className='btn-blog'>Перейти к статье</button>
+            <Link className='btn-blog' href={`/blog/${post.slug}`}>
+              Перейти к статье
+            </Link>
           </div>
         </div>
       </div>

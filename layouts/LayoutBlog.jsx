@@ -9,27 +9,28 @@ import HeaderLegal from '@/components/Header/HeaderLegal';
 
 const LayoutBlog = (props) => {
   return (
-    <div className={cn('white-background')}>
-      <PageLoader />
+    <>
+      <div className={cn('white-background')}>
+        <PageLoader />
 
-      <HeaderLegal />
+        <HeaderLegal />
 
-      <main>
-        <BlogBreadcrumb title={props.pageTitle} item={props.item} />
+        <main>
+          <BlogBreadcrumb title={props.pageTitle} item={props.item} />
 
-        <section className='blog-area  pt-130 pb-130'>
-          <div className='container '>
-            <div className='row '>
-              <div className='col-lg-12 d-flex'>{props.children}</div>
+          <section className='blog-area  pt-130 pb-130'>
+            <div className='container '>
+              <div className='row '>
+                <div className='col-lg-12 d-flex'>{props.children}</div>
 
-              {/* <div className='col-lg-4'><BlogAside /></div> */}
+                {/* <div className='col-lg-4'><BlogAside /></div> */}
+              </div>
             </div>
-          </div>
-        </section>
-      </main>
-
+          </section>
+        </main>
+      </div>
       <FooterOne />
-    </div>
+    </>
   );
 };
 
