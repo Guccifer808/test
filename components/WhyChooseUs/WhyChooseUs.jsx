@@ -8,6 +8,7 @@ const WhyChooseUs = () => {
     infinite: true,
     speed: 1000,
     autoplay: true,
+    autoplaySpeed: 2000,
     arrows: false,
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -105,13 +106,6 @@ const WhyChooseUs = () => {
     },
     {
       src: '/img/payments/mastercard.png',
-      alt: '',
-      link: '/',
-      title: '',
-      description: '',
-    },
-    {
-      src: '/img/payments/tether.png',
       alt: '',
       link: '/',
       title: '',

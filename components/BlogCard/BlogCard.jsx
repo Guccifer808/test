@@ -7,7 +7,7 @@ const BlogCard = ({ post }) => {
         className='card text-dark card-has-bg click-col mb-4'
         style={{ backgroundImage: `url(${post.src})` }}
       >
-        <img className='card-img d-none' src={post.src} alt={post.title} />
+        <img className='card-img d-none ' src={post.src} alt={post.title} />
         <div className='card-img-overlay d-flex flex-column'>
           <div className='card-body'>
             <small className='card-meta mb-2'>{post.category}</small>
