@@ -16,7 +16,10 @@ export default function HomeTwo() {
     <>
       <Head>
         <title>FastMoney - Сервис по обмену валют</title>
-        <meta name='description' content='' />
+        <meta
+          name='description'
+          content='Надежный сервис обмена валюты без лишних хлопот и скрытых комиссий. Быстро, выгодно, безопасно.'
+        />
       </Head>
 
       <LayoutTwo>

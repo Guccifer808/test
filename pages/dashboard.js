@@ -18,6 +18,7 @@ import { Button, Container } from '@mui/material';
 import { signOut } from 'firebase/auth';
 import { auth } from '@/firebase/firebase';
 import UpdateCurrencyRatesForm from '@/components/Dashboard/UpdateCurrencyRatesForm';
+import Head from 'next/head';
 
 const drawerWidth = 240;
 
@@ -85,103 +86,113 @@ export default function Dashboard() {
   };
 
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Box sx={{ display: 'flex' }}>
-        <CssBaseline />
-        <AppBar
-          position='absolute'
-          open={open}
-          sx={{ backgroundColor: '#000000' }}
-        >
-          <Toolbar
-            sx={{
-              pr: '24px', // keep right padding when drawer closed
-            }}
+    <>
+      <Head>
+        <title>FastMoney - Вход в систему</title>
+        <meta
+          name='description'
+          content='Надежный сервис обмена валюты без лишних хлопот и скрытых комиссий. Быстро, выгодно, безопасно.'
+        />
+      </Head>
+
+      <ThemeProvider theme={defaultTheme}>
+        <Box sx={{ display: 'flex' }}>
+          <CssBaseline />
+          <AppBar
+            position='absolute'
+            open={open}
+            sx={{ backgroundColor: '#000000' }}
           >
-            <IconButton
-              edge='start'
-              color='inherit'
-              aria-label='open drawer'
-              onClick={toggleDrawer}
+            <Toolbar
               sx={{
-                marginRight: '36px',
-                ...(open && { display: 'none' }),
+                pr: '24px', // keep right padding when drawer closed
               }}
             >
-              <MenuIcon />
-            </IconButton>
-            <Typography
-              component='h1'
-              variant='h6'
-              color='inherit'
-              noWrap
-              sx={{ flexGrow: 1 }}
-            >
-              <Image
-                src='/img/logo/fm_logo.svg'
-                alt='logo'
-                width='64'
-                height='64'
-              />
-            </Typography>
-            {/* <IconButton color='inherit' > */}
-            <Button
-              variant='contained'
-              color='primary'
-              sx={{
-                backgroundColor: '#564dca',
-                border: '1px solid #564dca',
-                borderRadius: '5px',
-                '&:hover': {
-                  backgroundColor: 'white',
-                  color: 'black',
+              <IconButton
+                edge='start'
+                color='inherit'
+                aria-label='open drawer'
+                onClick={toggleDrawer}
+                sx={{
+                  marginRight: '36px',
+                  ...(open && { display: 'none' }),
+                }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Typography
+                component='h1'
+                variant='h6'
+                color='inherit'
+                noWrap
+                sx={{ flexGrow: 1 }}
+              >
+                <Image
+                  src='/img/logo/fm_logo.svg'
+                  alt='logo'
+                  width='64'
+                  height='64'
+                />
+              </Typography>
+              {/* <IconButton color='inherit' > */}
+              <Button
+                variant='contained'
+                color='primary'
+                sx={{
+                  backgroundColor: '#564dca',
                   border: '1px solid #564dca',
-                },
+                  borderRadius: '5px',
+                  '&:hover': {
+                    backgroundColor: 'white',
+                    color: 'black',
+                    border: '1px solid #564dca',
+                  },
+                }}
+                onClick={handleLogout}
+              >
+                Выход
+              </Button>
+              {/* </IconButton> */}
+            </Toolbar>
+          </AppBar>
+          <Drawer variant='permanent' open={open}>
+            <Toolbar
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'flex-end',
+                px: [1],
               }}
-              onClick={handleLogout}
             >
-              Выход
-            </Button>
-            {/* </IconButton> */}
-          </Toolbar>
-        </AppBar>
-        <Drawer variant='permanent' open={open}>
-          <Toolbar
+              <IconButton onClick={toggleDrawer}>
+                <ChevronLeftIcon />
+              </IconButton>
+            </Toolbar>
+            <Divider />
+            <List component='nav'>
+              {mainListItems}
+              <Divider sx={{ my: 1 }} />
+            </List>
+          </Drawer>
+          <Box
+            component='main'
             sx={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'flex-end',
-              px: [1],
+              backgroundColor: (theme) =>
+                theme.palette.mode === 'light'
+                  ? theme.palette.grey[100]
+                  : theme.palette.grey[900],
+              flexGrow: 1,
+              height: '100vh',
+              overflow: 'auto',
             }}
           >
-            <IconButton onClick={toggleDrawer}>
-              <ChevronLeftIcon />
-            </IconButton>
-          </Toolbar>
-          <Divider />
-          <List component='nav'>
-            {mainListItems}
-            <Divider sx={{ my: 1 }} />
-          </List>
-        </Drawer>
-        <Box
-          component='main'
-          sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === 'light'
-                ? theme.palette.grey[100]
-                : theme.palette.grey[900],
-            flexGrow: 1,
-            height: '100vh',
-            overflow: 'auto',
-          }}
-        >
-          <Toolbar />
-          <Container maxWidth='sm' sx={{ mt: 4, mb: 4 }}>
-            <UpdateCurrencyRatesForm />
-          </Container>
+            <Toolbar />
+            <Container maxWidth='sm' sx={{ mt: 4, mb: 4 }}>
+              <UpdateCurrencyRatesForm />
+            </Container>
+          </Box>
         </Box>
-      </Box>
-    </ThemeProvider>
+      </ThemeProvider>
+    </>
   );
 }

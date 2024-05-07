@@ -7,7 +7,10 @@ export default function Home() {
     <>
       <Head>
         <title>FastMoney | Blog</title>
-        <meta name='description' content='' />
+        <meta
+          name='description'
+          content='Надежный сервис обмена валюты без лишних хлопот и скрытых комиссий. Быстро, выгодно, безопасно.'
+        />
       </Head>
 
       <LayoutBlog pageTitle={`FastMoney's Блог`} item={'Blog'}>

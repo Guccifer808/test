@@ -13,7 +13,7 @@ const BlogCard = ({ post }) => {
           <div className='card-body'>
             <small className='card-meta mb-2'>{post.category}</small>
             <h4 className='card-title mt-0 '>
-              <a>{post.title}</a>
+              <p>{post.title}</p>
             </h4>
             <small className='card-date'>
               <i className='far fa-clock' /> {post.date}
