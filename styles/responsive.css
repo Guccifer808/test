@@ -112,7 +112,7 @@
     font-size: 50px;
   }
   .breadcrumb-bg {
-    padding: 180px 0 120px;
+    padding: 125px 0 75px;
   }
   .breadcrumb-content .breadcrumb .breadcrumb-item {
     font-size: 15px;
@@ -283,15 +283,6 @@
     padding: 0 0;
   }
 
-  .blog-sidebar {
-    margin-left: 0;
-  }
-  .blog-widget {
-    padding: 35px 25px;
-  }
-  .rc-post-thumb {
-    margin-right: 15px;
-  }
   .blog-post-content > .title {
     font-size: 30px;
   }
@@ -357,15 +348,9 @@
   .blog-post-thumb img {
     border-radius: 10px;
   }
-  .rc-post-thumb {
-    width: 90px;
-    flex: 0 0 90px;
-  }
-  .rc-post-thumb img {
-    border-radius: 5px;
-  }
-  .rc-post-content .title {
-    font-size: 14px;
+  .blog-back-btn-wrap {
+    left: 2%;
+    bottom: 2%;
   }
 }
 
@@ -534,15 +519,7 @@
     font-size: 50px;
     margin-bottom: 25px;
   }
-  .blog-widget {
-    padding: 40px 30px;
-  }
-  .blog-sidebar {
-    margin-top: 130px;
-  }
-  .rc-post-thumb {
-    margin-right: 25px;
-  }
+
   .roadmap-area-two .roadmap-content {
     margin-left: 0;
     padding-left: 0;
@@ -657,9 +634,6 @@
   }
   .pagination-wrap ul {
     justify-content: center;
-  }
-  .rc-post-content .title {
-    font-size: 15px;
   }
 }
 
@@ -797,16 +771,10 @@
     margin-right: 25px;
   }
   .blog-post-content > .title {
-    font-size: 26px;
+    font-size: 24px;
   }
   .pagination-wrap ul {
     justify-content: center;
-  }
-  .blog-widget {
-    padding: 30px 20px;
-  }
-  .rc-post-thumb {
-    margin-right: 15px;
   }
 
   .blog-post-content .title br {
@@ -931,7 +899,7 @@
     padding: 40px 0 30px;
   }
   .breadcrumb-bg {
-    padding: 160px 0 100px;
+    padding: 125px 0 75px;
   }
   .breadcrumb-content .breadcrumb-item + .breadcrumb-item {
     padding-left: 10px;
@@ -953,14 +921,12 @@
   .blog-meta ul {
     margin-bottom: 15px;
   }
-  .blog-sidebar {
-    margin-top: 80px;
-  }
+
   .blog-details-area.pt-130.pb-130 {
     padding: 120px 0;
   }
   .bd-approach-wrap {
-    margin: 40px 0 35px;
+    margin: 30px 0 15px;
   }
   .banner-area-two .banner-content .title {
     font-size: 36px;
@@ -1004,12 +970,7 @@
   .blog-post-content > .title {
     font-size: 28px;
   }
-  .blog-widget {
-    padding: 40px 30px;
-  }
-  .rc-post-thumb {
-    margin-right: 20px;
-  }
+
   .roadmap-wrap-two .roadmap-item:nth-child(even),
   .roadmap-wrap-two .roadmap-item {
     width: 50%;
@@ -1040,9 +1001,6 @@
   .breadcrumb-content .title {
     font-size: 34px;
     margin-bottom: 25px;
-  }
-  .rc-post-content .title {
-    font-size: 16px;
   }
 
   .about-content-two .section-title {

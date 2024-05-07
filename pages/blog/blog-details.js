@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Head>
         <title>FastMoney | Blog</title>
-        {/* <meta name='description' content='' /> */}
+        <meta name='description' content='' />
       </Head>
 
       <LayoutBlog pageTitle={'Blog Details'} item={'BLOG DETAILS'}>

@@ -18,12 +18,10 @@ const LayoutBlog = (props) => {
         <main>
           <BlogBreadcrumb title={props.pageTitle} item={props.item} />
 
-          <section className='blog-area  pt-130 pb-130'>
+          <section className='blog-area pt-60 pb-60'>
             <div className='container '>
               <div className='row '>
                 <div className='col-lg-12 d-flex'>{props.children}</div>
-
-                {/* <div className='col-lg-4'><BlogAside /></div> */}
               </div>
             </div>
           </section>
